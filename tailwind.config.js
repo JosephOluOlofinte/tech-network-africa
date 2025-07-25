@@ -4,15 +4,17 @@ module.exports = {
 
   theme: {
     screens: {
-      mobile: '390px',
+      mobile: '375px',
       xlmobile: '480px',
       tablet: '640px',
       xltablet: '768px',
       laptop: '1024px',
-      lglaptop: '1280px',
-      desktop: '1920px',
+      desktop: '1440px',
     },
     extend: {
+      maxWidth: {
+        container: '1440px',
+      },
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
       },

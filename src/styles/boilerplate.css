@@ -10,9 +10,8 @@ html,
   font-weight: 400;
 }
 
-.contain {
-  max-width: 1920px;
-  margin: 0 auto;
+.container {
+  max-width: 1440px !important;
 }
 
 /* Base font styles for the document */
