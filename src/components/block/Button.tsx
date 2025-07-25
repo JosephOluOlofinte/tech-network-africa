@@ -38,7 +38,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   // decalre baseStyles i.e., styles common to all buttons
   const baseStyles =
-    'rounded-[100px] font-medium border transition-all ease-in-out duration-300';
+    'rounded-[100px] text-base font-inter font-medium border transition-all ease-in-out duration-300';
 
   // declare variantStyles i.e, style unique to each variant
   const variantStyles: Record<ButtonVariants, string> = {
@@ -73,8 +73,8 @@ const Button: React.FC<ButtonProps> = ({
           disabled={isLoading}
           {...rest}
         >
-          <span className='h-full flex items-center gap-2'>
-            {icon ? <PlusIcon className='m-0 h-[24px] w-[24px]' /> : null}{' '}
+          <span className='h-full flex items-center text-base gap-2'>
+            {icon ? <PlusIcon /> : null}{' '}
             {isLoading ? 'Loading...' : children || text}
           </span>
         </button>

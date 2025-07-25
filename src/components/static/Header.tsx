@@ -3,12 +3,13 @@
 import { Fragment } from 'react/jsx-runtime';
 import logo from '../../assets/images/logo.png';
 import { Button } from '../block';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
     <Fragment>
       <header className='h-[85px] flex justify-center items-center'>
-        <div className='bg-absoluteWhite h-full w-[85%] flex justify-center items-center rounded-[100px] shadow-md'>
+        <div className='bg-absoluteWhite h-full w-full flex justify-center items-center rounded-[100px] shadow-md'>
           <div className='w-[95%] h-full flex justify-between items-center'>
             <div className='h-[50px]'>
               <img src={logo} alt='TNA logo' className='h-full' />
@@ -17,24 +18,36 @@ const Header = () => {
             <nav>
               <ul className='h-full flex items-center gap-[22px]'>
                 <li>
-                  <a href='#' className='py-3 px-[22px] font-medium'>
+                  <NavLink
+                    to='#'
+                    className='py-3 px-[22px] text-lg font-medium'
+                  >
                     Home
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href='#' className='py-3 px-[22px] font-medium'>
+                  <NavLink
+                    to='#'
+                    className='py-3 px-[22px] text-lg font-medium'
+                  >
                     About us
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href='#' className='py-3 px-[22px] font-medium'>
+                  <NavLink
+                    to='#'
+                    className='py-3 px-[22px] text-lg font-medium'
+                  >
                     Our Estate
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href='#' className='py-3 px-[22px] font-medium'>
+                  <NavLink
+                    to='#'
+                    className='py-3 px-[22px] text-lg font-medium'
+                  >
                     Marketplace
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
@@ -52,7 +65,6 @@ const Header = () => {
                 type='button'
                 text='Join Network'
               />
-
             </div>
           </div>
         </div>
