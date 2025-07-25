@@ -61,7 +61,9 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   // combine all button styles into a single string
-  const styles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
+  const styles = `${baseStyles} ${className} ${variantStyles[variant]} ${sizeStyles[size]} `;
+
+  console.log(styles);
 
   return (
     <Fragment>
@@ -73,7 +75,7 @@ const Button: React.FC<ButtonProps> = ({
           disabled={isLoading}
           {...rest}
         >
-          <span className='h-full flex items-center text-base gap-2'>
+          <span className='h-full flex items-center gap-2'>
             {icon ? <PlusIcon /> : null}{' '}
             {isLoading ? 'Loading...' : children || text}
           </span>

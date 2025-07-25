@@ -23,30 +23,6 @@ module.exports = {
         heroMobile: [],
         heroTab: [],
         heroDesktop: [],
-        // xl: [
-        //   'clamp(1.25rem, 1.25rem, 1.25rem)',
-        //   { lineHeight: 'clamp(1.875rem, 1.875rem, 1.875rem)' },
-        // ],
-        // lg: [
-        //   'clamp(1.125rem, 1.125rem, 1.125rem)',
-        //   { lineHeight: 'clamp(1.75rem, 1.75rem, 1.75rem)' },
-        // ],
-        // base: [
-        //   'clamp(1rem, 1rem, 1rem)',
-        //   { lineHeight: 'clamp(1.5rem, 1.5rem, 1.5rem)' },
-        // ],
-        // md: [
-        //   'clamp(1.25rem, 1.25rem, 1.25rem)',
-        //   { lineHeight: 'clamp(1.25rem, 1.25rem, 1.25rem)' },
-        // ],
-        // sm: [
-        //   'clamp(0.75rem, 0.75rem, 0.75rem)',
-        //   { lineHeight: 'clamp(1.125rem, 1.125rem, 1.125rem)' },
-        // ],
-        // xs: [
-        //   'clamp(0.4rem, 0.6vw, 0.5rem)',
-        //   { lineHeight: 'clamp(0.6rem, 1.1vw, 0.75rem)' },
-        // ],
       },
       colors: {
         deepBlue1: '#001968',
