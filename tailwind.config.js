@@ -31,8 +31,8 @@ module.exports = {
           { lineHeight: 'clamp(1.1rem, 2.2vw, 1.75rem)' },
         ],
         base: [
-          'clamp(0.9rem, 1vw, 1rem)',
-          { lineHeight: 'clamp(1rem, 2vw, 1.5rem)' },
+          'clamp(1rem, 1rem, 1rem)',
+          { lineHeight: 'clamp(1.5rem, 1.5rem, 1.5rem)' },
         ],
         md: [
           'clamp(0.8rem, 0.9vw, 0.875rem)',

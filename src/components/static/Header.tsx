@@ -2,6 +2,7 @@
 
 import { Fragment } from 'react/jsx-runtime';
 import logo from '../../assets/images/logo.png';
+import { Button } from '../block';
 
 const Header = () => {
   return (
@@ -39,12 +40,19 @@ const Header = () => {
             </nav>
 
             <div className='h-full flex items-center gap-3'>
-              <button className='text-deepBlue2 border border-deepBlue2 py-[10px] px-[18px] rounded-[100px] font-medium'>
-                Sign in
-              </button>
-              <button className='text-absoluteWhite bg-deepBlue2 py-[10px] px-[18px] rounded-[100px] font-medium'>
-                Join Network
-              </button>
+              <Button
+                variant='tertiary'
+                size='regular'
+                type='button'
+                text='Sign in'
+              />
+              <Button
+                variant='primary'
+                size='regular'
+                type='button'
+                text='Join Network'
+              />
+
             </div>
           </div>
         </div>

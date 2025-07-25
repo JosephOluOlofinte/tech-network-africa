@@ -20,26 +20,12 @@ html {
   line-height: 1.5rem; /* Base line height for readability */
 }
 
-body,
-p,
-div p,
-li {
-  font-size: clamp(0.9rem, 1vw, 1rem); /* 16px for base body text */
-  line-height: clamp(1rem, 2vw, 1.5rem);
-  color: #333; /* Standard text color */
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-body,
-li,
-p,
-a,
-span {
+h6 {
   letter-spacing: -2%;
 }
 
