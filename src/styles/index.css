@@ -5,5 +5,8 @@
 .bg-hero {
   background-image: url('../assets/images/aerial-view-private-houses-with-solar-panels-roofs.jpg');
   background-size: cover;
-  background-position: center;
+}
+
+.inner-container {
+  width: 85%;
 }

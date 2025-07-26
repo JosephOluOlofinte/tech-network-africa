@@ -1,13 +1,15 @@
 // import React from 'react'
 
-import Hero from "./Hero"
+import Hero from './Hero';
+import WhatWeOffer from './WhatWeOffer';
 
 const HomeComp = () => {
   return (
-      <>
-          <Hero />
-      </>
-  )
-}
+    <>
+      <Hero />
+      <WhatWeOffer />
+    </>
+  );
+};
 
-export default HomeComp
+export default HomeComp;

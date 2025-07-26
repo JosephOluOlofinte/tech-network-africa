@@ -12,9 +12,6 @@ module.exports = {
       desktop: '1440px',
     },
     extend: {
-      maxWidth: {
-        container: '1440px',
-      },
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
@@ -22,7 +19,7 @@ module.exports = {
       fontSize: {
         heroMobile: [],
         heroTab: [],
-        heroDesktop: [],
+        heroDesktop: ['52px', '52px'],
       },
       colors: {
         deepBlue1: '#001968',
@@ -56,17 +53,17 @@ module.exports = {
         absoluteWhite: '#ffffff',
         absoluteBlack: '#000000',
       },
+    },
 
-      keyframes: {
-        slide: {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
-        },
+    keyframes: {
+      slide: {
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-100%)' },
       },
+    },
 
-      animation: {
-        'hero-slide': 'slide 80s linear infinite',
-      },
+    animation: {
+      'hero-slide': 'slide 80s linear infinite',
     },
   },
   plugins: [],

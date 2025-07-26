@@ -11,6 +11,7 @@ html,
 
 .container {
   max-width: 1440px !important;
+  margin: 0 auto;
 }
 
 /* Base font styles for the document */
