@@ -23,7 +23,7 @@ const Mission = () => {
             </p>
           </div>
 
-          <div className='w-full grid grid-cols-2 gap-6'>
+          <div className='w-full grid grid-cols-2 gap-5'>
             <MissionCard
               title='Energy Efficient'
               desc='We have Integrated energy-efficient systems like solar

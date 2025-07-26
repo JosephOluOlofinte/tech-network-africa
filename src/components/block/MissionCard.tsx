@@ -25,18 +25,18 @@ const MissionCard: React.FC<CardProps> = ({
     card2: 'bg-[#D6F4EC]',
     card3: 'bg-[#FEEDED]',
     card4: 'bg-[#E9EEFF]',
-    };
-    
-    // declare classes common to all card
-    const commonStyles =
-      'h-[285px] w-fit max-w-[590px] rounded-[20px] flex overflow-hidden';
+  };
+
+  // declare classes common to all card
+  const commonStyles =
+    'h-[285px] w-fit max-w-[600px] rounded-[20px] flex overflow-hidden';
 
   // merge classes
   const styles = `${variantStyles[variant]} ${commonStyles} ${className}`;
 
   return (
     <div className={styles}>
-      <div className='py-8 pl-6 grid gap-[12px]'>
+      <div className='py-8 pl-8 grid gap-[12px]'>
         <h3 className='text-3xl leading-[38px] font-bold'>{title}</h3>
         <p className='text-lg text-slateGray2 font-medium max-w-[28ch]'>
           {desc}
