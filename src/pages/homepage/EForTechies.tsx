@@ -27,12 +27,6 @@ const EForTechies = () => {
           </div>
         </div>
       </section>
-      <div className='min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-600 flex items-center justify-center'>
-        <div className='backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-10 shadow-xl text-white max-w-md w-full'>
-          <h2 className='text-2xl font-bold mb-4'>Glassmorphism Card</h2>
-          <p>This is a translucent card using Tailwind CSS.</p>
-        </div>
-      </div>
     </Fragment>
   );
 };

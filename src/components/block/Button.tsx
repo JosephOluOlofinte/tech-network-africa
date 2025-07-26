@@ -63,7 +63,6 @@ const Button: React.FC<ButtonProps> = ({
   // combine all button styles into a single string
   const styles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 
-  console.log(styles);
 
   return (
     <Fragment>

@@ -53,6 +53,9 @@ module.exports = {
         absoluteWhite: '#ffffff',
         absoluteBlack: '#000000',
       },
+      rotate: {
+        11: '11deg',
+      },
     },
 
     keyframes: {
