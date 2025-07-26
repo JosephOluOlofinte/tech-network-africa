@@ -10,3 +10,8 @@
 .inner-container {
   width: 85%;
 }
+
+.bg-e-for-techies {
+  background-image: url('../assets/images/estate-for-techies-aerial-view-private-houses-with-solar-panels-roofs.png');
+  background-size: cover;
+}
