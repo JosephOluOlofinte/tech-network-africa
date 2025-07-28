@@ -38,6 +38,7 @@ module.exports = {
         slateGray3: '#A6A8A8',
         slateGray4: '#CACACA',
         slateGray5: '#ECECEC',
+        slateGray500: '#667085',
         lightGray2: '#4B4343',
         lightGray3: '#6D6464',
         lightGray4: '#8F8787',
@@ -50,8 +51,7 @@ module.exports = {
         softOrange100: '#FAC898',
         softOrange5: '#FFE3C8',
         softOrange6: '#FFFAF5',
-        absoluteWhite: '#ffffff',
-        absoluteBlack: '#000000',
+        brandWhite: '#F4F7FF',
       },
       rotate: {
         11: '11deg',
