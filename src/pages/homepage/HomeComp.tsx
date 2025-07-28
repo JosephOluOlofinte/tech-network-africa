@@ -2,6 +2,7 @@
 
 import AnEstateMajorly from './AnEstateMajorly';
 import EForTechies from './EForTechies';
+import ExploreMarket from './ExploreMarket';
 import Hero from './Hero';
 import Mission from './Mission';
 import WhatWeOffer from './WhatWeOffer';
@@ -14,6 +15,7 @@ const HomeComp = () => {
       <EForTechies />
       <Mission />
       <AnEstateMajorly />
+      <ExploreMarket />
     </>
   );
 };
