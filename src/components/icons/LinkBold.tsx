@@ -1,0 +1,34 @@
+import React from 'react';
+
+const LinkBold = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      x-bind:width='size'
+      x-bind:height='size'
+      viewBox='0 0 24 24'
+      fill='none'
+      width='24'
+      height='24'
+      {...props}
+    >
+      <path
+        d='M3.27 12C2.48 11.05 2 9.83 2 8.5C2 5.48 4.47 3 7.5 3H12.5C15.52 3 18 5.48 18 8.5C18 11.52 15.53 14 12.5 14H10'
+        stroke-width='1.5'
+        stroke-linejoin='round'
+        stroke-linecap='round'
+        x-bind:stroke-width='stroke'
+        stroke='#0029AC'
+      ></path>
+      <path
+        d='M20.73 12C21.52 12.95 22 14.17 22 15.5C22 18.52 19.53 21 16.5 21H11.5C8.48 21 6 18.52 6 15.5C6 12.48 8.47 10 11.5 10H14'
+        stroke-width='1.5'
+        stroke-linejoin='round'
+        stroke-linecap='round'
+        x-bind:stroke-width='stroke'
+        stroke='#0029AC'
+      ></path>
+    </svg>
+  );
+};
+
+export default LinkBold;

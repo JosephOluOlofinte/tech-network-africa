@@ -1,5 +1,9 @@
 import { Fragment } from 'react';
 import image from '../../assets/images/male-female-light-bulb-green-illustration.png';
+import AnEstateMajorlyCard from '../../components/block/AnEstateMajorlyCard';
+import LinkBold from '../../components/icons/LinkBold';
+import TrendUp from '../../components/icons/TrendUp';
+
 
 const AnEstateMajorly = () => {
   return (
@@ -20,13 +24,23 @@ const AnEstateMajorly = () => {
           </div>
 
           <div className='grid grid-cols-2'>
-            <div className='w-full max-w-[510px] grid grid-rows-2'>
-              <div>
-                <div></div>
-                <div></div>
-              </div>
+            <div className='w-full max-w-[510px] grid grid-rows-2 gap-[70px]'>
+              <AnEstateMajorlyCard
+                Icon={LinkBold}
+                title1='Productive Socialization'
+                title2='Link up and Connect with creatives in the Estate'
+                desc='TNA organizes networking events, workshops, and social gatherings within the estate where creatives can meet face-to-face, exchange ideas, and collaborate on projects.'
+              />
+
+              <AnEstateMajorlyCard
+                Icon={TrendUp}
+                title1='Growth Check and Review'
+                title2='Career Tracking and Latest Updates to Stay Ahead in the Digital Era'
+                desc='We understand the importance of continuous learning and development in the digital age. We help residents in tracking career progress, and ensure they are well informed about latest updates in the digital space'
+              />
             </div>
-            <div className='w-full max-w-[610px]'>
+
+            <div className='self-center w-full max-w-[610px]'>
               <img src={image} alt='' className='object-cover w-full' />
             </div>
           </div>
