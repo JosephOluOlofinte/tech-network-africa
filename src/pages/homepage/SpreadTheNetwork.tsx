@@ -13,8 +13,8 @@ const SpreadTheNetwork = () => {
             </h2>
           </header>
 
-          <div className='grid grid-cols-2 gap-5'>
-            <div className='w-full max-w-[590px] bg-deepBlue3 rounded-[10px] p-9 grid gap-4'>
+          <div className='w-full grid grid-cols-2'>
+            <div className='w-full justify-self-start max-w-[590px] bg-deepBlue3 rounded-[10px] p-9 grid gap-4'>
               <h3 className='text-brandWhite text-[32px] leading-tight font-bold'>
                 Connect with us and stay updated on latest gist
               </h3>
@@ -28,7 +28,7 @@ const SpreadTheNetwork = () => {
               </div>
             </div>
 
-            <div className='w-full max-w-[590px] bg-mintGreen3 rounded-[10px] p-9 grid gap-4'>
+            <div className='w-full justify-self-end max-w-[590px] bg-mintGreen3 rounded-[10px] p-9 grid gap-4'>
               <h3 className='text-brandWhite text-[32px] leading-tight font-bold'>
                 Tell Your Tech Bro and Tech Sis About Us
               </h3>

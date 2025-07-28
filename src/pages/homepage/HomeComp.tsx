@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import { JoinNewsletter } from '../../components';
 import AnEstateMajorly from './AnEstateMajorly';
 import EForTechies from './EForTechies';
 import ExploreMarket from './ExploreMarket';
@@ -18,6 +19,7 @@ const HomeComp = () => {
       <AnEstateMajorly />
       <ExploreMarket />
       <SpreadTheNetwork />
+      <JoinNewsletter />
     </>
   );
 };
