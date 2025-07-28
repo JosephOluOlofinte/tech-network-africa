@@ -4,11 +4,10 @@ import AnEstateMajorlyCard from '../../components/block/AnEstateMajorlyCard';
 import LinkBold from '../../components/icons/LinkBold';
 import TrendUp from '../../components/icons/TrendUp';
 
-
 const AnEstateMajorly = () => {
   return (
     <Fragment>
-      <section className='bg-[#F4F7FF] h-fit py-[100px] flex justify-center'>
+      <section className='bg-brandWhite h-fit py-[100px] flex justify-center'>
         <div className='inner-container grid gap-[100px]'>
           <div className='grid gap-[15px] justify-center text-center'>
             <header>

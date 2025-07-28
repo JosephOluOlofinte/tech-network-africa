@@ -5,6 +5,7 @@ import EForTechies from './EForTechies';
 import ExploreMarket from './ExploreMarket';
 import Hero from './Hero';
 import Mission from './Mission';
+import SpreadTheNetwork from './SpreadTheNetwork';
 import WhatWeOffer from './WhatWeOffer';
 
 const HomeComp = () => {
@@ -16,6 +17,7 @@ const HomeComp = () => {
       <Mission />
       <AnEstateMajorly />
       <ExploreMarket />
+      <SpreadTheNetwork />
     </>
   );
 };

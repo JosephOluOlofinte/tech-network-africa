@@ -6,10 +6,12 @@ import WwoCard from '../../components/block/WwoCard';
 const WhatWeOffer = () => {
   return (
     <Fragment>
-      <section className='bg-[#F4F7FF] flex h-fit justify-center'>
+      <section className='bg-brandWhite flex h-fit justify-center'>
         <div className='inner-container h-full'>
           <header className='h-[150px] flex items-center'>
-            <h2 className='text-5xl font-medium text-deepblue100'>What we offer</h2>
+            <h2 className='text-5xl font-medium text-deepblue100'>
+              What we offer
+            </h2>
           </header>
 
           <div className='min-h-[600px] flex items-end pb-[50px]'>

@@ -52,6 +52,7 @@ module.exports = {
         softOrange5: '#FFE3C8',
         softOrange6: '#FFFAF5',
         brandWhite: '#F4F7FF',
+        brandBlack: '#212121',
       },
       rotate: {
         11: '11deg',

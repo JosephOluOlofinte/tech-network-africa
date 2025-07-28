@@ -9,7 +9,7 @@ import MissionCard from '../../components/block/MissionCard';
 const Mission = () => {
   return (
     <Fragment>
-      <section className='bg-[#F4F7FF] h-fit py-[100px] flex justify-center'>
+      <section className='bg-brandWhite h-fit py-[100px] flex justify-center'>
         <div className='inner-container grid gap-[100px]'>
           <div className='grid gap-[15px] justify-center text-center'>
             <header>

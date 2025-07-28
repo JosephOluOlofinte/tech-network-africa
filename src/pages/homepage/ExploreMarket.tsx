@@ -10,11 +10,11 @@ const ExploreMarket = () => {
         <div className='inner-container grid grid-cols-2'>
           <div className='h-fit grid gap-[25px] self-center'>
             <header className='w-full max-w-[50ch]'>
-              <h2 className='text-5xl leading-[60px] font-bold text-[#F4F7FF]'>
+              <h2 className='text-5xl leading-[60px] font-bold text-brandWhite'>
                 Explore our Marketplace for affordable gadget
               </h2>
             </header>
-            <p className='w-full max-w-[42ch] text-xl font-medium text-[#F4F7FF]'>
+            <p className='w-full max-w-[42ch] text-xl font-medium text-brandWhite'>
               Our marketplace allows users to buy and sell gently used gadgets,
               facilitating upgrades and making it easier for everyone to afford
               gadgets and kickstart their tech career effortlessly.
