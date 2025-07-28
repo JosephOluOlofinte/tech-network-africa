@@ -39,6 +39,7 @@ module.exports = {
         slateGray4: '#CACACA',
         slateGray5: '#ECECEC',
         slateGray500: '#667085',
+        slateGray50: '#F9FAFB',
         lightGray2: '#4B4343',
         lightGray3: '#6D6464',
         lightGray4: '#8F8787',
