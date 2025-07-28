@@ -14,7 +14,7 @@ const Hero = () => {
           <main className='w-full h-full flex justify-between items-center'>
             <div className='max-w-[580px] flex flex-col gap-[17px]'>
               <div className='flex flex-col gap-3'>
-                <h1 className='text-heroDesktop w-[16ch] text-absoluteWhite font-medium '>
+                <h1 className='text-heroDesktop w-[16ch] text-brandWhite font-medium '>
                   Making Lifestyle and work easy for all tech enthusiasts across
                   Africa
                 </h1>

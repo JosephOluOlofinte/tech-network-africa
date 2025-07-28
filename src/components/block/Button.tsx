@@ -43,14 +43,14 @@ const Button: React.FC<ButtonProps> = ({
   // declare variantStyles i.e, style unique to each variant
   const variantStyles: Record<ButtonVariants, string> = {
     primary:
-      'bg-deepBlue2 border-deepBlue2 text-absoluteWhite hover:bg-[#1642CE] hover:border-[#1642CE]',
+      'bg-deepBlue2 border-deepBlue2 text-brandWhite hover:bg-[#1642CE] hover:border-[#1642CE]',
     secondary:
       'bg-deepBlue5 border-deepBlue5 text-deepBlue2 hover:bg-[#E3EAFF] hover:border-[#E3EAFF]',
     tertiary:
-      'bg-absolutewhite text-deepBlue2 border border-deepBlue2 hover:border-deepBlue3 hover:text-deepBlue3',
+      'bg-brandWhite text-deepBlue2 border border-deepBlue2 hover:border-deepBlue3 hover:text-deepBlue3',
     textBtn: 'bg-none text-deepBlue2 border-transparent hover:text-underline',
     danger:
-      'bg-red-500 text-absoluteWhite border-red-500 hover:border-red-500 hover:bg-red-600 focus:ring-red-300',
+      'bg-red-500 text-brandWhite border-red-500 hover:border-red-500 hover:bg-red-600 focus:ring-red-300',
   };
 
   // declare styles for button sizes
@@ -62,7 +62,6 @@ const Button: React.FC<ButtonProps> = ({
 
   // combine all button styles into a single string
   const styles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
-
 
   return (
     <Fragment>
