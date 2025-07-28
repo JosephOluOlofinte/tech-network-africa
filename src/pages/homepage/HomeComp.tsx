@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import AnEstateMajorly from './AnEstateMajorly';
 import EForTechies from './EForTechies';
 import Hero from './Hero';
 import Mission from './Mission';
@@ -12,6 +13,7 @@ const HomeComp = () => {
       <WhatWeOffer />
       <EForTechies />
       <Mission />
+      <AnEstateMajorly />
     </>
   );
 };
