@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { Button } from "../../components";
+import { Button } from '../../components';
 
 const FAQ = () => {
   return (
@@ -34,6 +34,6 @@ const FAQ = () => {
       </div>
     </section>
   );
-}
+};
 
-export default FAQ
+export default FAQ;
