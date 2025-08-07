@@ -7,14 +7,14 @@
     "config": "tailwind.config.js",
     "css": "src/styles/index.css",
     "baseColor": "neutral",
-    "cssVariables": true,
+    "cssVariables": false,
     "prefix": ""
   },
   "aliases": {
-    "components": "@/components",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui/ui_components",
-    "lib": "@/lib",
+    "components": "/src/components",
+    "utils": "src/lib/utils",
+    "ui": "src/components/shadcn",
+    "lib": "src/lib",
     "hooks": "@/hooks"
   },
   "iconLibrary": "lucide"
