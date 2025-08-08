@@ -4,7 +4,6 @@ import { Fragment } from 'react/jsx-runtime';
 import logo from '../../assets/images/logo.png';
 import { Button } from '../block';
 import { NavLink } from 'react-router-dom';
-import { ShadBtn } from '../shadcn/button';
 
 const Header = () => {
   return (
@@ -54,9 +53,6 @@ const Header = () => {
             </nav>
 
             <div className='h-full flex items-center gap-3'>
-              <ShadBtn variant='default' size='lg'>
-                Default
-              </ShadBtn>
               <Button
                 variant='tertiary'
                 size='regular'
