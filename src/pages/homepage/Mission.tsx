@@ -29,21 +29,21 @@ const Mission = () => {
               desc='We have Integrated energy-efficient systems like solar
                   inverter and sustainable practices into apartments.'
               img={card1Img}
-              variant='card1'
+              className='bg-[#FFF5EC]'
             />
 
             <MissionCard
               title='Equipped Work Space'
               desc='All our apartments are customized with a dedicated work space and well equipped with necessary gadgets'
               img={card2Img}
-              variant='card2'
+              className='bg-[#D6F4EC]'
             />
 
             <MissionCard
               title='Equipped Work Space'
               desc='All our apartments are customized with a dedicated work space and well equipped with necessary gadgets'
               img={card2Img}
-              variant='card3'
+              className='bg-[#FEEDED]'
             />
 
             <MissionCard
@@ -51,7 +51,7 @@ const Mission = () => {
               desc='We have Integrated energy-efficient systems like solar
                   inverter and sustainable practices into apartments.'
               img={card1Img}
-              variant='card4'
+              className='bg-[#E9EEFF]'
             />
           </div>
         </div>

@@ -58,9 +58,9 @@ const Accordion: React.FC<AccordionProps> = ({
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
-              stroke-width='2'
+              stroke-width='2.5'
               stroke='currentColor'
-              className='size-8 p-[6px] rounded-md text-brandBlue2'
+              className='size-5 p-[2px] text-brandBlue2'
             >
               <path
                 stroke-linecap='round'
@@ -75,9 +75,9 @@ const Accordion: React.FC<AccordionProps> = ({
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
-              strokeWidth={2}
+              strokeWidth='2.5'
               stroke='currentColor'
-              className='size-5 p-[2px] rounded-md text-brandBlue2'
+              className='size-5 p-[2px] text-brandBlue2'
             >
               <path
                 strokeLinecap='round'

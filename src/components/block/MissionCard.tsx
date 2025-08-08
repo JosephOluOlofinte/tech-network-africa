@@ -2,13 +2,11 @@ import React from 'react';
 import Button from './Button';
 import ArrowRight from '../icons/ArrowRight';
 
-type CardVariants = 'card1' | 'card2' | 'card3' | 'card4';
 
 type CardProps = {
   title: string;
   desc: string;
   img: string;
-  variant: CardVariants;
   className?: string;
 };
 
@@ -16,23 +14,16 @@ const MissionCard: React.FC<CardProps> = ({
   title,
   desc,
   img,
-  variant,
   className,
 }) => {
-  // declare card variants styles
-  const variantStyles: Record<CardVariants, string> = {
-    card1: 'bg-[#FFF5EC]',
-    card2: 'bg-[#D6F4EC]',
-    card3: 'bg-[#FEEDED]',
-    card4: 'bg-[#E9EEFF]',
-  };
+
 
   // declare classes common to all card
   const commonStyles =
     'h-[285px] w-fit max-w-[600px] rounded-[20px] flex overflow-hidden';
 
-  // merge classes
-  const styles = `${variantStyles[variant]} ${commonStyles} ${className}`;
+  // let common styles be merged with classname styles
+  const styles = `${commonStyles} ${className}`;
 
   return (
     <div className={styles}>
