@@ -3,6 +3,10 @@
 import { NavLink } from 'react-router-dom';
 import { Button } from '../block';
 import logo from '../../assets/images/logo.png'
+import fb from '../../assets/img_icons/Fb-footer.png'
+import x from '../../assets/img_icons/Tw-footer.png'
+import Li from '../../assets/img_icons/Ln-footer.png';
+import ig from '../../assets/img_icons/In-footer.png'
 
 const Footer = () => {
   return (
@@ -70,12 +74,17 @@ const Footer = () => {
         </div>
 
         <div className='h-[105px] py-7 px-8 bg-white rounded-[10px] flex justify-between items-center'>
-          <div></div>
+          <div>
+            <img src={fb} alt='' />
+            <img src={x} alt='' />
+            <img src={Li} alt='' />
+            <img src={ig} alt='' />
+          </div>
           <p className='text-sm text-[#1D2739]'>
             © 2024 Israelajala. All rights reserved.
           </p>
           <div className='h-[50px]'>
-            <img src={logo} alt='' className='h-full w-auto'/>
+            <img src={logo} alt='' className='h-full w-auto' />
           </div>
         </div>
       </div>

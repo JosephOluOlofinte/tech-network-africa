@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import ArrowRight from '../icons/ArrowRight';
-
+import ArrowRight from '../svg_icons/ArrowRight';
 
 type CardProps = {
   title: string;
@@ -10,14 +9,7 @@ type CardProps = {
   className?: string;
 };
 
-const MissionCard: React.FC<CardProps> = ({
-  title,
-  desc,
-  img,
-  className,
-}) => {
-
-
+const MissionCard: React.FC<CardProps> = ({ title, desc, img, className }) => {
   // declare classes common to all card
   const commonStyles =
     'h-[285px] w-fit max-w-[600px] rounded-[20px] flex overflow-hidden';

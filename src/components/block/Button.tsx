@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
-import PlusIcon from '../icons/PlusIcon';
+import PlusIcon from '../svg_icons/PlusIcon';
 
 type ButtonVariants =
   | 'primary'
