@@ -1,24 +1,51 @@
 // import React from 'react'
 
-import { Button } from "../../components";
+import { Button } from '../../components';
+import Accordion from '../../components/block/Accordion';
 
 const FAQ = () => {
   return (
     <section className='bg-white h-fit py-[100px] flex justify-center'>
-      <div className='inner-container grid gap-[100px]'>
+      <div className='inner-container grid gap-[70px] place-items-center'>
         <div className='grid gap-[15px] justify-center text-center'>
           <header>
             <h2 className='text-4xl leading-[44px] font-bold text-[#0B0D12]'>
               Frequently asked questions
             </h2>
           </header>
-          <p className='text-xl leading-[30px] text-slateGray500'>
+          <p className='text-xl leading-[30px] text-brandDeepGray500'>
             Everything you need to know about how TNA works
           </p>
         </div>
 
-        <div></div>
-        <div className='bg-slateGray50 p-8 rounded-2xl grid gap-8 place-content-center'>
+        <div className='w-[800px]'>
+          <Accordion
+            title='How do I rent an apartment in the estate?'
+            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
+          />
+          <Accordion
+            title='Can I customize the inbuilt workstations in the apartments?'
+            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
+          />
+          <Accordion
+            title='What are the amenities in the estate apartments?'
+            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
+          />
+          <Accordion
+            title='How does the marketplace for buying and selling of used item work?'
+            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
+          />
+          <Accordion
+            title='What is the cost of an apartments in the estate?'
+            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
+          />
+          <Accordion
+            title='How do I win gadgets giveaway on the marketplace?'
+            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
+          />
+        </div>
+
+        <div className='bg-brandDeepGray50 w-full p-8 rounded-2xl grid gap-8 place-content-center'>
           <div></div>
           <p className='grid text-center'>
             <b>Still have questions?</b>
@@ -34,6 +61,6 @@ const FAQ = () => {
       </div>
     </section>
   );
-}
+};
 
-export default FAQ
+export default FAQ;

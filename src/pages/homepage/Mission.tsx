@@ -17,7 +17,7 @@ const Mission = () => {
                 We Are On A Mission
               </h2>
             </header>
-            <p className='text-2xl text-slateGray2 w-[40ch]'>
+            <p className='text-2xl text-brandDeepGray2 w-[40ch]'>
               To ensure living is convenient and apartments are equipped to
               break barriers in productivity constraints in the tech industry
             </p>

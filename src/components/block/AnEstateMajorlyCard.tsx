@@ -1,6 +1,6 @@
 // import React, { type ReactNode } from 'react';
 
-import type React from "react";
+import type React from 'react';
 
 type Props = {
   Icon: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -18,13 +18,17 @@ const AnEstateMajorlyCard: React.FC<Props> = ({
   return (
     <div className='grid gap-4'>
       <div className='grid gap-[6px]'>
-        <div className='bg-deepBlue5 w-fit p-3 rounded-full'>
+        <div className='bg-brandBlue5 w-fit p-3 rounded-full'>
           <Icon className='size-[42px]' />
         </div>
-        <h3 className='text-xl leading-[30px] font-medium text-deepblue100'>{title1}</h3>
+        <h3 className='text-xl leading-[30px] font-medium text-brandBlue100'>
+          {title1}
+        </h3>
         <h4 className='text-3xl leading-[38px] font-medium'>{title2}</h4>
       </div>
-      <p className='text-xl leading-[32px] text-[#717171] font-medium'>{desc}</p>
+      <p className='text-xl leading-[32px] text-[#717171] font-medium'>
+        {desc}
+      </p>
     </div>
   );
 };

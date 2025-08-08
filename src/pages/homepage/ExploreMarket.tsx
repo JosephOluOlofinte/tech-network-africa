@@ -6,7 +6,7 @@ import ExploreMarketCard from '../../components/block/ExploreMarketCard';
 const ExploreMarket = () => {
   return (
     <Fragment>
-      <section className='bg-mintGreen3 h-fit py-[100px] relative flex justify-center'>
+      <section className='bg-brandGreen3 h-fit py-[100px] relative flex justify-center'>
         <div className='inner-container grid grid-cols-2'>
           <div className='h-fit grid gap-[25px] self-center'>
             <header className='w-full max-w-[50ch]'>
@@ -37,7 +37,7 @@ const ExploreMarket = () => {
             <Button
               variant='secondary'
               text='Read More'
-              className='!text-slateGray100'
+              className='!text-brandDeepGray100'
             />
           </div>
           <div className='absolute bottom-0 right-0 w-full max-w-[730px]'>

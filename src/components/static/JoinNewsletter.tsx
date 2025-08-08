@@ -28,7 +28,7 @@ const JoinNewsletter = () => {
             <input
               type='button'
               value='Subscribe'
-              className='py-4 px-6 bg-deepBlue2 text-brandWhite font-medium rounded-lg col-span-1'
+              className='py-4 px-6 bg-brandBlue2 text-brandWhite font-medium rounded-lg col-span-1'
             />
           </form>
         </div>

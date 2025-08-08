@@ -15,7 +15,7 @@ const AnEstateMajorly = () => {
                 An estate majorly for the tech industry
               </h2>
             </header>
-            <p className='text-2xl text-slateGray2 w-[60ch]'>
+            <p className='text-2xl text-brandDeepGray2 w-[60ch]'>
               Here, you'll find more than just a place to live or work – you'll
               discover a vibrant community of like-minded individuals passionate
               about technology and its limitless possibilities.

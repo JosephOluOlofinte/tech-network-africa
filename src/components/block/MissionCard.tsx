@@ -38,7 +38,7 @@ const MissionCard: React.FC<CardProps> = ({
     <div className={styles}>
       <div className='py-8 pl-8 grid gap-[12px]'>
         <h3 className='text-3xl leading-[38px] font-bold'>{title}</h3>
-        <p className='text-lg text-slateGray2 font-medium max-w-[28ch]'>
+        <p className='text-lg text-brandDeepGray2 font-medium max-w-[28ch]'>
           {desc}
         </p>
         <div className='h-fit flex items-center gap-1'>

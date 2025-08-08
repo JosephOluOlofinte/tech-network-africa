@@ -9,7 +9,7 @@ const WhatWeOffer = () => {
       <section className='bg-brandWhite flex h-fit justify-center'>
         <div className='inner-container h-full'>
           <header className='h-[150px] flex items-center'>
-            <h2 className='text-5xl font-medium text-deepblue100'>
+            <h2 className='text-5xl font-medium text-brandBlue100'>
               What we offer
             </h2>
           </header>

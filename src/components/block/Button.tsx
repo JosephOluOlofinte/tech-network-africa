@@ -7,7 +7,8 @@ type ButtonVariants =
   | 'secondary'
   | 'tertiary'
   | 'textBtn'
-  | 'danger';
+  | 'danger'
+  | 'greyBtn';
 type ButtonSize = 'small' | 'regular' | 'large';
 type ButtonType = 'button' | 'submit' | 'reset';
 type ButtonProps = {
@@ -43,12 +44,14 @@ const Button: React.FC<ButtonProps> = ({
   // declare variantStyles i.e, style unique to each variant
   const variantStyles: Record<ButtonVariants, string> = {
     primary:
-      'bg-deepBlue2 border-deepBlue2 text-brandWhite hover:bg-[#1642CE] hover:border-[#1642CE]',
+      'bg-brandBlue2 border-brandBlue2 text-brandWhite hover:bg-[#1642CE] hover:border-[#1642CE]',
     secondary:
-      'bg-deepBlue5 border-deepBlue5 text-deepBlue2 hover:bg-[#E3EAFF] hover:border-[#E3EAFF]',
+      'bg-brandBlue5 border-brandBlue5 text-brandBlue2 hover:bg-[#E3EAFF] hover:border-[#E3EAFF]',
     tertiary:
-      'bg-brandWhite text-deepBlue2 border border-deepBlue2 hover:border-deepBlue3 hover:text-deepBlue3',
-    textBtn: 'bg-none text-deepBlue2 border-transparent hover:text-underline',
+      'bg-brandWhite text-brandBlue2 border border-brandBlue2 hover:border-brandBlue3 hover:text-brandBlue3',
+    textBtn: 'bg-none text-brandBlue2 border-transparent hover:text-underline',
+    greyBtn:
+      'bg-[#F7F7F8] border-[1px] border-[#F1F1F3] rounded-[6px] w-[100%] text-center hover:bg-[#F1F1F3] hover:border-[#E4E4E7]',
     danger:
       'bg-red-500 text-brandWhite border-red-500 hover:border-red-500 hover:bg-red-600 focus:ring-red-300',
   };
