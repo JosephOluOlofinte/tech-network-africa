@@ -22,3 +22,11 @@
   background-repeat: no-repeat;
   background-position: left;
 }
+
+form,
+label,
+input,
+select,
+select option {
+  font-family: 'Inter';
+}
