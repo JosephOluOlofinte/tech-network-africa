@@ -74,11 +74,11 @@ const Footer = () => {
         </div>
 
         <div className='h-[105px] py-7 px-8 bg-white rounded-[10px] flex justify-between items-center'>
-          <div>
-            <img src={fb} alt='' />
-            <img src={x} alt='' />
-            <img src={Li} alt='' />
-            <img src={ig} alt='' />
+          <div className='grid grid-cols-[auto_auto_auto_auto] gap-6'>
+            <img src={fb} alt='' className='size-6' />
+            <img src={x} alt='' className='size-6' />
+            <img src={Li} alt='' className='size-6' />
+            <img src={ig} alt='' className='size-6' />
           </div>
           <p className='text-sm text-[#1D2739]'>
             © 2024 Israelajala. All rights reserved.
