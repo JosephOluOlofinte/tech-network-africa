@@ -2,6 +2,7 @@
 
 import { JoinNewsletter } from '../../components';
 import AnEstateMajorly from './AnEstateMajorly';
+import Contact from './Contact';
 import EForTechies from './EForTechies';
 import ExploreMarket from './ExploreMarket';
 import FAQ from './FAQ';
@@ -20,6 +21,7 @@ const HomeComp = () => {
       <AnEstateMajorly />
       <ExploreMarket />
       <SpreadTheNetwork />
+      <Contact />
       <FAQ />
       <JoinNewsletter />
     </>

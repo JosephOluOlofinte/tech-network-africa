@@ -15,3 +15,10 @@
   background-image: url('../assets/images/estate-for-techies-aerial-view-private-houses-with-solar-panels-roofs.png');
   background-size: cover;
 }
+
+.bg-home-contact {
+  background-image: url('../assets/images/contactImg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
