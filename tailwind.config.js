@@ -58,18 +58,19 @@ module.exports = {
       rotate: {
         11: '11deg',
       },
-    },
 
-    keyframes: {
-      slide: {
-        from: { transform: 'translateX(0)' },
-        to: { transform: 'translateX(-100%)' },
+      keyframes: {
+        slide: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+      },
+
+      animation: {
+        'hero-slide': 'slide 80s linear infinite',
       },
     },
-
-    animation: {
-      'hero-slide': 'slide 80s linear infinite',
-    },
   },
+
   plugins: [],
 };

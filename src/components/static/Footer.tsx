@@ -30,16 +30,22 @@ const Footer = () => {
                 <NavLink to=''>About</NavLink>
               </li>
               <li>
-                <NavLink to=''>
-                  Marketplace <span>Download App</span>
+                <NavLink to='' className='flex gap-4 items-baseline'>
+                  Marketplace
+                  <span className='py-[2px] px-3 text-xs bg-brandWhite text-brandBlack rounded-2xl animate-bounce'>
+                    Download App
+                  </span>
                 </NavLink>
               </li>
               <li>
                 <NavLink to=''>Blog</NavLink>
               </li>
               <li>
-                <NavLink to=''>
-                  Apartments <span>Availale!</span>
+                <NavLink to='' className='flex gap-4 items-baseline'>
+                  Apartments
+                  <span className='py-[2px] px-3 text-xs bg-brandWhite text-brandBlack rounded-2xl animate-bounce'>
+                    Available!
+                  </span>
                 </NavLink>
               </li>
               <li>
