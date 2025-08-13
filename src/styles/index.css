@@ -2,31 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-hero {
-  background-image: url('../assets/images/aerial-view-private-houses-with-solar-panels-roofs.jpg');
-  background-size: cover;
+@layer base {
+  form,
+  label,
+  input,
+  select,
+  select option {
+    font-family: 'Inter';
+    font-size: 14px;
+    @apply text-brandDeepGray700;
+    @apply bg-transparent;
+    @apply border-gray-300;
+  }
 }
 
-.inner-container {
-  width: 85%;
-}
 
-.bg-e-for-techies {
-  background-image: url('../assets/images/estate-for-techies-aerial-view-private-houses-with-solar-panels-roofs.png');
-  background-size: cover;
-}
+@layer utilities {
+  .bg-hero {
+    background-image: url('../assets/images/aerial-view-private-houses-with-solar-panels-roofs.jpg');
+    background-size: cover;
+  }
 
-.bg-home-contact {
-  background-image: url('../assets/images/contactImg.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-}
+  .inner-container {
+    width: 85%;
+  }
 
-form,
-label,
-input,
-select,
-select option {
-  font-family: 'Inter';
+  .bg-e-for-techies {
+    background-image: url('../assets/images/estate-for-techies-aerial-view-private-houses-with-solar-panels-roofs.png');
+    background-size: cover;
+  }
+
+  .bg-home-contact {
+    background-image: url('../assets/images/contactImg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
 }

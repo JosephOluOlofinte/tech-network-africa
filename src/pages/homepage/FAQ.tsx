@@ -1,7 +1,8 @@
 // import React from 'react'
 
 import { Button } from '../../components';
-import Accordion from '../../components/block/Accordion';
+import { Accordion } from '../../components/block/Accordion';
+import { AccordionChild } from '../../components/block/Accordion';
 
 const FAQ = () => {
   return (
@@ -18,32 +19,32 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className='w-[800px]'>
-          <Accordion
+        <Accordion className='w-[800px]'>
+          <AccordionChild
             title='How do I rent an apartment in the estate?'
             description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
           />
-          <Accordion
+          <AccordionChild
             title='Can I customize the inbuilt workstations in the apartments?'
             description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
           />
-          <Accordion
+          <AccordionChild
             title='What are the amenities in the estate apartments?'
             description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
           />
-          <Accordion
+          <AccordionChild
             title='How does the marketplace for buying and selling of used item work?'
             description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
           />
-          <Accordion
+          <AccordionChild
             title='What is the cost of an apartments in the estate?'
             description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
           />
-          <Accordion
+          <AccordionChild
             title='How do I win gadgets giveaway on the marketplace?'
             description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
           />
-        </div>
+        </Accordion>
 
         <div className='bg-brandDeepGray50 w-full p-8 rounded-2xl grid gap-8 place-content-center'>
           <div></div>

@@ -33,6 +33,7 @@ const Contact = () => {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
     setSuccessMessage("")
+    console.log(data);
 
     try {
       const res = await fetch('/api/v1/contact', {
@@ -40,6 +41,7 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
       })
+      
 
       if (!res.ok) throw new Error("Something went wrong")
       
@@ -81,7 +83,7 @@ const Contact = () => {
                 <label className='block mb-1'>Full name</label>
                 <input
                   {...register('fullName')}
-                  className='w-full border p-2 rounded'
+                  className='w-full border p-2 rounded border-gray-300'
                   placeholder='Enter your full name'
                 />
                 {errors.fullName && (
@@ -97,7 +99,7 @@ const Contact = () => {
                 <input
                   type='email'
                   {...register('email')}
-                  className='w-full border p-2 rounded'
+                  className='w-full border p-2 rounded border-gray-300'
                   placeholder='Enter your email address'
                 />
                 {errors.email && (
@@ -110,7 +112,7 @@ const Contact = () => {
                 <label className='block mb-1'>Phone number (call line)</label>
                 <input
                   {...register('phone')}
-                  className='w-full border p-2 rounded'
+                  className='w-full border border-gray-300 p-2 rounded'
                   placeholder='Enter your Phone number'
                 />
                 {errors.phone && (
@@ -123,7 +125,7 @@ const Contact = () => {
                 <label className='block mb-1'>WhatsApp number (optional)</label>
                 <input
                   {...register('whatsapp')}
-                  className='w-full border p-2 rounded'
+                  className='w-full border border-gray-300 p-2 rounded'
                   placeholder='Enter your WhatsApp number'
                 />
                 {errors.whatsapp && (
@@ -138,9 +140,12 @@ const Contact = () => {
                 <label className='block mb-1'>Best Way to Reach You</label>
                 <select
                   {...register('bestWay')}
-                  className='w-full border p-2 rounded'
+                  className='form-select w-full border border-gray-300 p-2 rounded pr-12'
                 >
-                  <option value='phone' className='font-inter'>
+                  <option
+                    value='phone'
+                    className='font-inter text-brandDeepGray700'
+                  >
                     Phone call
                   </option>
                   <option value='whatsapp' className='font-inter'>
@@ -162,7 +167,7 @@ const Contact = () => {
                 <label className='block mb-1'>How Can We Help?</label>
                 <textarea
                   {...register('message')}
-                  className='w-full border p-2 rounded'
+                  className='w-full border border-gray-300 p-2 rounded resize-none'
                   rows={4}
                   placeholder='Tell us how we can help. Include as much information as possible.'
                 />
