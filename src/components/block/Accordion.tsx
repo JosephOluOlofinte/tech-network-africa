@@ -145,10 +145,19 @@ import Button from './Button';
 
 // export default Accordion;
 
+type AccordionChildProps = {
+  title: string;
+  description: string;
+  withBtn?: boolean;
+  btnText?: string;
+  btnUrl?: string;
+  isOpen?: boolean; // coming from parent
+  onToggle?: () => void; // coming from parent
+};
 
 
 type AccordionProps = {
-  children: React.ReactNode;
+  children: React.ReactElement<AccordionChildProps>[];
   className?: string;
 };
 
@@ -177,15 +186,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   );
 };
 
-type AccordionChildProps = {
-  title: string;
-  description: string;
-  withBtn?: boolean;
-  btnText?: string;
-  btnUrl?: string;
-  isOpen?: boolean; // coming from parent
-  onToggle?: () => void; // coming from parent
-};
+
 
 export const AccordionChild: React.FC<AccordionChildProps> = ({
   title,
