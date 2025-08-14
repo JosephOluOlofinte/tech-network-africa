@@ -1,8 +1,8 @@
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Button } from '../../components';
 import { useState } from 'react';
+import { Button } from '../block';
 
 const Schema = z.object({
   fullName: z.string().min(2, 'Full name is required'),
@@ -16,9 +16,8 @@ const Schema = z.object({
 type FormData = z.infer<typeof Schema>;
 
 const Contact = () => {
-
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [successMessage, setSuccessMessage] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
 
   const {
     register,
@@ -27,31 +26,30 @@ const Contact = () => {
     reset,
   } = useForm<FormData>({
     resolver: zodResolver(Schema),
-    mode: 'onChange'
+    mode: 'onChange',
   });
 
   const onSubmit = async (data: FormData) => {
-    setIsSubmitting(true)
-    setSuccessMessage("")
+    setIsSubmitting(true);
+    setSuccessMessage('');
     console.log(data);
 
     try {
       const res = await fetch('/api/v1/contact', {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-      })
-      
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
 
-      if (!res.ok) throw new Error("Something went wrong")
-      
-      setSuccessMessage("Your message has been sent")
-      reset()
+      if (!res.ok) throw new Error('Something went wrong');
+
+      setSuccessMessage('Your message has been sent');
+      reset();
     } catch (error) {
-      console.error(error)
-      setSuccessMessage("Failed to send message. Please try again")
+      console.error(error);
+      setSuccessMessage('Failed to send message. Please try again');
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   };
 
@@ -76,8 +74,7 @@ const Contact = () => {
 
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className='max-w-lg grid gap-8 max-h-fit'
-            >
+              className='max-w-lg grid gap-8 max-h-fit'>
               {/* Full name */}
               <div>
                 <label className='block mb-1'>Full name</label>
@@ -140,12 +137,10 @@ const Contact = () => {
                 <label className='block mb-1'>Best Way to Reach You</label>
                 <select
                   {...register('bestWay')}
-                  className='form-select w-full border border-gray-300 p-2 rounded pr-12'
-                >
+                  className='form-select w-full border border-gray-300 p-2 rounded pr-12'>
                   <option
                     value='phone'
-                    className='font-inter text-brandDeepGray700'
-                  >
+                    className='font-inter text-brandDeepGray700'>
                     Phone call
                   </option>
                   <option value='whatsapp' className='font-inter'>

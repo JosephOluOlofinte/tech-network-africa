@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <Fragment>
       <header className='h-[85px] flex justify-center items-center'>
-        <div className='bg-brandWhite h-full w-full flex justify-center items-center rounded-[100px] shadow-md'>
+        <div className='bg-white h-full w-full flex justify-center items-center rounded-[100px] shadow-md'>
           <div className='w-[95%] h-full flex justify-between items-center'>
             <div className='h-[50px]'>
               <img src={logo} alt='TNA logo' className='h-full' />
@@ -20,32 +20,28 @@ const Header = () => {
                 <li>
                   <NavLink
                     to='#'
-                    className='py-3 px-[22px] text-lg font-medium'
-                  >
+                    className='py-3 px-[22px] text-lg font-medium'>
                     Home
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='#'
-                    className='py-3 px-[22px] text-lg font-medium'
-                  >
+                    className='py-3 px-[22px] text-lg font-medium'>
                     About us
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='#'
-                    className='py-3 px-[22px] text-lg font-medium'
-                  >
+                    className='py-3 px-[22px] text-lg font-medium'>
                     Our Estate
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='#'
-                    className='py-3 px-[22px] text-lg font-medium'
-                  >
+                    className='py-3 px-[22px] text-lg font-medium'>
                     Marketplace
                   </NavLink>
                 </li>

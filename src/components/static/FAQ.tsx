@@ -1,8 +1,11 @@
 // import React from 'react'
 
-import { Button } from '../../components';
-import { Accordion } from '../../components/block/Accordion';
-import { AccordionChild } from '../../components/block/Accordion';
+import { Accordion } from '../block/Accordion';
+import { AccordionChild } from '../block/Accordion';
+import israel1 from '../../assets/images/israel-1.png';
+import israel2 from '../../assets/images/israel-2.png';
+import seyi from '../../assets/images/seyi.png';
+import { Button } from '../block';
 
 const FAQ = () => {
   return (
@@ -36,16 +39,14 @@ const FAQ = () => {
               variant='greyBtn'
               size='regular'
               className='flex justify-between items-center mt-[20px] laptop:mt-[40px] desktop:mt-[50px]'
-              url=''
-            >
+              url=''>
               <p className='font-medium text-grey30 max-w-[80%]'>Learn more</p>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
                 strokeWidth={1.5}
-                className='stroke-grey30 size-10 laptop:size-12 desktop:size-14 bg-absoluteWhite rounded-full m-0 leading-none'
-              >
+                className='stroke-grey30 size-10 laptop:size-12 desktop:size-14 bg-absoluteWhite rounded-full m-0 leading-none'>
                 <path
                   strokeLinecap='round'
                   strokeLinejoin='round'
@@ -78,7 +79,18 @@ const FAQ = () => {
         </Accordion>
 
         <div className='bg-brandDeepGray50 w-full p-8 rounded-2xl grid gap-8 place-content-center'>
-          <div></div>
+          <div className='flex justify-center items-center w-full'>
+            <div className='w-12 h-12 -mr-3'>
+              <img src={israel1} alt='' className='w-full' />
+            </div>
+            <div className='w-14 h-14 z-10'>
+              <img src={israel2} alt='' className='w-full' />
+            </div>
+            <div className='w-12 h-12 -ml-3'>
+              <img src={seyi} alt='' className='w-full' />
+            </div>
+          </div>
+
           <p className='grid text-center'>
             <b>Still have questions?</b>
             <span>

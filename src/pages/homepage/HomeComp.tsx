@@ -2,10 +2,10 @@
 
 import { JoinNewsletter } from '../../components';
 import AnEstateMajorly from './AnEstateMajorly';
-import Contact from './Contact';
+import Contact from '../../components/static/Contact';
 import EForTechies from './EForTechies';
 import ExploreMarket from './ExploreMarket';
-import FAQ from './FAQ';
+import FAQ from '../../components/static/FAQ';
 import Hero from './Hero';
 import Mission from './Mission';
 import SpreadTheNetwork from './SpreadTheNetwork';

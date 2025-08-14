@@ -2,10 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 
 // DOCUMENTATION
 // This is the accordion component
-// The content is set to ReactNode so html
+// The AccordionChild children is set to ReactNode so html
 // and/or JSX can be used within the accordion
 // So answers to FAQs can have links, buttons, images, etc
-
 
 type AccordionChildProps = {
   title: string;
@@ -13,7 +12,6 @@ type AccordionChildProps = {
   isOpen?: boolean; // coming from parent
   onToggle?: () => void; // coming from parent
 };
-
 
 type AccordionProps = {
   children: React.ReactElement<AccordionChildProps>[];
@@ -45,35 +43,30 @@ export const Accordion: React.FC<AccordionProps> = ({
   );
 };
 
-
-
 export const AccordionChild: React.FC<AccordionChildProps> = ({
   title,
   children,
   isOpen = false,
   onToggle,
 }) => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(0);
 
-   const contentRef = useRef<HTMLDivElement>(null);
-   const [height, setHeight] = useState(0);
+  // Whenever open state changes, measure the scrollHeight
+  useEffect(() => {
+    if (contentRef.current) {
+      setHeight(isOpen ? contentRef.current.scrollHeight : 0);
+    }
+  }, [isOpen, children]);
 
-   // Whenever open state changes, measure the scrollHeight
-   useEffect(() => {
-     if (contentRef.current) {
-       setHeight(isOpen ? contentRef.current.scrollHeight : 0);
-     }
-   }, [isOpen, children]);
-  
   return (
     <div
       className={`h-max border-b rounded-[10px] xltablet:px-[40px] lglaptop:px-[50px] w-full transition-all duration-1000 ${
         isOpen ? 'py-[40px]' : 'py-[24px]'
-      }`}
-    >
+      }`}>
       <button
         onClick={onToggle}
-        className='w-[100%] text-left cursor-pointer outline-0 flex justify-between items-center'
-      >
+        className='w-[100%] text-left cursor-pointer outline-0 flex justify-between items-center'>
         <h3 className='text-[18px] font-inter font-medium max-w-[80%] leading-[1.4]'>
           {title}
         </h3>
@@ -86,8 +79,7 @@ export const AccordionChild: React.FC<AccordionChildProps> = ({
               viewBox='0 0 24 24'
               strokeWidth='2.5'
               stroke='currentColor'
-              className='size-5 p-[2px] text-brandBlue2'
-            >
+              className='size-5 p-[2px] text-brandBlue2'>
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -104,8 +96,7 @@ export const AccordionChild: React.FC<AccordionChildProps> = ({
               viewBox='0 0 24 24'
               strokeWidth='2.5'
               stroke='currentColor'
-              className='size-5 p-[2px] text-brandBlue2'
-            >
+              className='size-5 p-[2px] text-brandBlue2'>
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -118,15 +109,12 @@ export const AccordionChild: React.FC<AccordionChildProps> = ({
 
       <div
         className='overflow-hidden transition-all duration-700'
-        style={{ maxHeight: `${height}px` }}
-      >
+        style={{ maxHeight: `${height}px` }}>
         <div
           ref={contentRef}
-          className='border-t border-white90 pt-[20px] laptop:pt-[40px] desktop:pt-[50px] mt-[24px] h-fit text-brandDeepGray500 font-inter font-normal text-[16px]'
-        >
+          className='pt-[10px] laptop:pt-[24px] h-fit text-brandDeepGray500 font-inter font-normal text-base'>
           {children}
         </div>
-
       </div>
     </div>
   );

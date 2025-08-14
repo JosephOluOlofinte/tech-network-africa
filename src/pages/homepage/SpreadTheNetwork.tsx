@@ -1,6 +1,11 @@
 // import React from 'react'
 
 import { Fragment } from 'react/jsx-runtime';
+import fb from '../../assets/img_icons/fb.png';
+import x from '../../assets/img_icons/x.png';
+import Li from '../../assets/img_icons/Li.png';
+import ig from '../../assets/img_icons/ig.png';
+import share from '../../assets/img_icons/share.png'
 
 const SpreadTheNetwork = () => {
   return (
@@ -23,8 +28,19 @@ const SpreadTheNetwork = () => {
                 updates, and engaging content leading up to the big reveal of
                 our flagship product.
               </p>
-              <div className='text-brandWhite'>
-                social <br /> Links
+              <div className='text-brandWhite flex items-center gap-3'>
+                <a href=''>
+                  <img src={fb} alt='' className='size-10' />
+                </a>
+                <a href=''>
+                  <img src={x} alt='' className='size-10' />
+                </a>
+                <a href=''>
+                  <img src={Li} alt='' className='size-10' />
+                </a>
+                <a href=''>
+                  <img src={ig} alt='' className='size-10' />
+                </a>
               </div>
             </div>
 
@@ -38,7 +54,9 @@ const SpreadTheNetwork = () => {
                 industry a welcoming home for everyone!
               </p>
               <div className='text-brandWhite'>
-                social <br /> Links
+                <a href='' className='flex items-center justify-center gap-2 w-fit border border-white rounded-[28px] py-[10px] px-[20px] text-sm font-medium'>
+                  Share Circles <img src={share} alt='' className='size-5' />
+                </a>
               </div>
             </div>
           </div>
