@@ -20,30 +20,61 @@ const FAQ = () => {
         </div>
 
         <Accordion className='w-[800px]'>
-          <AccordionChild
-            title='How do I rent an apartment in the estate?'
-            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
-          />
-          <AccordionChild
-            title='Can I customize the inbuilt workstations in the apartments?'
-            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
-          />
-          <AccordionChild
-            title='What are the amenities in the estate apartments?'
-            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
-          />
-          <AccordionChild
-            title='How does the marketplace for buying and selling of used item work?'
-            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
-          />
-          <AccordionChild
-            title='What is the cost of an apartments in the estate?'
-            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
-          />
-          <AccordionChild
-            title='How do I win gadgets giveaway on the marketplace?'
-            description='Download our mobile app here to browse through a wide selection of apartments, with detailed pricing information.'
-          />
+          <AccordionChild title='How do I rent an apartment in the estate?'>
+            <p>
+              Download our mobile app here to browse through a wide selection of
+              apartments, with detailed pricing information.
+            </p>
+          </AccordionChild>
+
+          <AccordionChild title='How do I rent an apartment in the estate?'>
+            <p>
+              Download our mobile app here to browse through a wide selection of
+              apartments, with detailed pricing information.
+            </p>
+            <Button
+              variant='greyBtn'
+              size='regular'
+              className='flex justify-between items-center mt-[20px] laptop:mt-[40px] desktop:mt-[50px]'
+              url=''
+            >
+              <p className='font-medium text-grey30 max-w-[80%]'>Learn more</p>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                className='stroke-grey30 size-10 laptop:size-12 desktop:size-14 bg-absoluteWhite rounded-full m-0 leading-none'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='m12.75 15 3-3m0 0-3-3m3 3h-7'
+                />
+              </svg>
+            </Button>
+          </AccordionChild>
+
+          <AccordionChild title='How do I rent an apartment in the estate?'>
+            <p>
+              Download our mobile app here to browse through a wide selection of
+              apartments, with detailed pricing information.
+            </p>
+          </AccordionChild>
+
+          <AccordionChild title='How do I rent an apartment in the estate?'>
+            <p>
+              Download our mobile app here to browse through a wide selection of
+              apartments, with detailed pricing information.
+            </p>
+          </AccordionChild>
+
+          <AccordionChild title='How do I rent an apartment in the estate?'>
+            <p>
+              Download our mobile app here to browse through a wide selection of
+              apartments, with detailed pricing information.
+            </p>
+          </AccordionChild>
         </Accordion>
 
         <div className='bg-brandDeepGray50 w-full p-8 rounded-2xl grid gap-8 place-content-center'>
