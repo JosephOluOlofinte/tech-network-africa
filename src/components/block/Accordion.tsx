@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 // DOCUMENTATION
 // This is the accordion component
@@ -53,6 +53,17 @@ export const AccordionChild: React.FC<AccordionChildProps> = ({
   isOpen = false,
   onToggle,
 }) => {
+
+   const contentRef = useRef<HTMLDivElement>(null);
+   const [height, setHeight] = useState(0);
+
+   // Whenever open state changes, measure the scrollHeight
+   useEffect(() => {
+     if (contentRef.current) {
+       setHeight(isOpen ? contentRef.current.scrollHeight : 0);
+     }
+   }, [isOpen, children]);
+  
   return (
     <div
       className={`h-max border-b rounded-[10px] xltablet:px-[40px] lglaptop:px-[50px] w-full transition-all duration-1000 ${
@@ -106,13 +117,16 @@ export const AccordionChild: React.FC<AccordionChildProps> = ({
       </button>
 
       <div
-        className={`overflow-hidden transition-all duration-1000 ${
-          isOpen ? 'max-h-[1000px]' : 'h-0'
-        }`}
+        className='overflow-hidden transition-all duration-700'
+        style={{ maxHeight: `${height}px` }}
       >
-        <p className='text-brandDeepGray500 font-inter font-normal text-[16px] border-t border-white90 pt-[20px] laptop:pt-[40px] desktop:pt-[50px] mt-[24px] h-fit'>
+        <div
+          ref={contentRef}
+          className='border-t border-white90 pt-[20px] laptop:pt-[40px] desktop:pt-[50px] mt-[24px] h-fit text-brandDeepGray500 font-inter font-normal text-[16px]'
+        >
           {children}
-        </p>
+        </div>
+
       </div>
     </div>
   );
