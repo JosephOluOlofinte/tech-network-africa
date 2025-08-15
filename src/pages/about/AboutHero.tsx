@@ -1,7 +1,7 @@
 // import React from 'react'
 
 import { Fragment } from 'react/jsx-runtime';
-import { Button, Header } from '../../components';
+import { Header } from '../../components';
 import heroImage from '../../assets/images/hero-image.png';
 
 const AboutHero = () => {
@@ -11,26 +11,16 @@ const AboutHero = () => {
         <div className='inner-container h-[90%] flex flex-col'>
           <Header />
 
-          <main className='w-full h-full flex justify-between items-center'>
+          <main className='w-full h-full flex flex-col justify-between items-center'>
             <div className='max-w-[580px] flex flex-col gap-[17px]'>
               <div className='flex flex-col gap-3'>
                 <h1 className='text-heroDesktop w-[16ch] text-brandWhite font-medium '>
-                  Making Lifestyle and work easy for all tech enthusiasts across
-                  Africa
+                  TECH NETWORK AFRICA
                 </h1>
                 <p className='text-[rgba(244,247,255,0.8)] text-xl w-[40ch]'>
-                  We provide estates with custom Apartments, dedicated workspace
-                  & online Marketplace for tech enthusiasts
+                  Making living and work convenient for enhanced productivity
+                  and career growth.
                 </p>
-              </div>
-              <div className='flex gap-9'>
-                <Button text='Contact Us' variant='secondary' type='button' />
-                <Button
-                  text='Learn more'
-                  variant='textBtn'
-                  type='button'
-                  className='text-white !px-0'
-                />
               </div>
             </div>
 

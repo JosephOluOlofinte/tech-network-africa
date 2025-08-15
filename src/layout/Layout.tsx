@@ -4,7 +4,7 @@ import { Fragment } from 'react/jsx-runtime';
 import { Footer } from '../components';
 import { Outlet } from 'react-router-dom';
 
-const Layout = () => {
+export const Layout = () => {
   return (
     <Fragment>
       <Outlet />
@@ -13,4 +13,10 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export const AuthLayout = () => {
+  return (
+    <Fragment>
+      <Outlet />
+    </Fragment>
+  )
+}
