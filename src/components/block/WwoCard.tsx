@@ -1,3 +1,5 @@
+// What we offer section on the homepage
+
 import React from 'react';
 
 import ArrowRight from '../../assets/svg_icons/ArrowRight';

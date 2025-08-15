@@ -5,9 +5,9 @@ import TransparentCard from '../../components/block/TransparentCard';
 
 const WhatYouMust = () => {
   return (
-    <section className='bg-white h-fit py-[100px] flex justify-center'>
-      <div className='inner-container grid gap-[100px]'>
-        <div className='grid gap-8'>
+    <section className='bg-white h-fit py-[75px] flex justify-center'>
+      <div className='inner-container grid gap-[70px]'>
+        <div className='grid gap-5'>
           <header>
             <h2 className='text-4xl leading-[44px] font-bold text-brandDeepGray900'>
               What you must know about us
