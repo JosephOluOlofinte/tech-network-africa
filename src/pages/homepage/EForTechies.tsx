@@ -8,7 +8,7 @@ const EForTechies = () => {
     <Fragment>
       <section className='bg-e-for-techies w-full min-h-[630px] py-[275px] flex justify-center'>
         <div className='inner-container'>
-          <div className='backdrop-blur-md bg-[#79797961]/10 rounded-[20px] shadow-md py-[50px] px-10 grid gap-6 w-[65ch]'>
+          <div className='backdrop-blur-md bg-[#797979]/10 rounded-[20px] shadow-md py-[50px] px-10 grid gap-6 w-[65ch]'>
             <header>
               <h2 className='text-3xl leading-[44px] text-white font-bold'>
                 An Estate for Techies

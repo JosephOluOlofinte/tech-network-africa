@@ -16,7 +16,6 @@
   }
 }
 
-
 @layer utilities {
   .bg-hero {
     background-image: url('../assets/images/aerial-view-private-houses-with-solar-panels-roofs.jpg');
@@ -37,5 +36,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
+  }
+
+  /* About page */
+  .bg-metrics {
+    background-image: url('../assets//images//metrics-bg-lg-cropped.jpg');
+    background-size: cover;
   }
 }
