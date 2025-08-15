@@ -19,28 +19,28 @@ const Header = () => {
               <ul className='h-full flex items-center gap-[22px]'>
                 <li>
                   <NavLink
-                    to='#'
+                    to='/'
                     className='py-3 px-[22px] text-lg font-medium'>
                     Home
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
-                    to='#'
+                    to='/about'
                     className='py-3 px-[22px] text-lg font-medium'>
                     About us
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
-                    to='#'
+                    to='/our-estate'
                     className='py-3 px-[22px] text-lg font-medium'>
                     Our Estate
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
-                    to='#'
+                    to='/marketplace'
                     className='py-3 px-[22px] text-lg font-medium'>
                     Marketplace
                   </NavLink>
@@ -54,12 +54,14 @@ const Header = () => {
                 size='regular'
                 type='button'
                 text='Sign in'
+                url='/auth/sign-in'
               />
               <Button
                 variant='primary'
                 size='regular'
                 type='button'
                 text='Join Network'
+                url='/auth/join-network'
               />
             </div>
           </div>
