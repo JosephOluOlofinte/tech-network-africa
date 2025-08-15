@@ -27,6 +27,7 @@ const WhatYouMust = () => {
             <TransparentCard
               title='Real Estate'
               desc='Focused on building and designing a well conducive and well-equipped apartments tailored for tech enthusiasts.'
+              url='#'
             />
           </div>
 
@@ -37,6 +38,7 @@ const WhatYouMust = () => {
             <TransparentCard
               title='E-commerce'
               desc='The apartment feature inbuilt customized workstations and other essential furniture needed in a standard living apartment. '
+              url='#'
             />
           </div>
         </div>
