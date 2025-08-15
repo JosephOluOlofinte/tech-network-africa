@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import image from '../../assets/images/male-female-light-bulb-green-illustration.png';
 import AnEstateMajorlyCard from '../../components/block/AnEstateMajorlyCard';
-import LinkBold from '../../components/svg_icons/LinkBold';
-import TrendUp from '../../components/svg_icons/TrendUp';
+import LinkBold from '../../assets/svg_icons/LinkBold';
+import TrendUp from '../../assets/svg_icons/TrendUp';
 
 const AnEstateMajorly = () => {
   return (

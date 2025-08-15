@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import ArrowRight from '../svg_icons/ArrowRight';
+import ArrowRight from '../../assets/svg_icons/ArrowRight';
 
 type CardProps = {
   title: string;

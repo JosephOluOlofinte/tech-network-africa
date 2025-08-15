@@ -41,6 +41,7 @@ module.exports = {
         brandDeepGray500: '#667085',
         brandDeepGray50: '#F9FAFB',
         brandDeepGray700: '#344054',
+        brandDeepGray900: '#101828',
         brandLightGray2: '#4B4343',
         brandLightGray3: '#6D6464',
         brandLightGray4: '#8F8787',
@@ -73,7 +74,5 @@ module.exports = {
     },
   },
 
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require('@tailwindcss/forms')],
 };
