@@ -8,17 +8,17 @@ const Hero = () => {
   return (
     <Fragment>
       <section className='bg-hero h-[750px] flex justify-center items-center'>
-        <div className='inner-container h-[90%] flex flex-col'>
+        <div className='inner-container h-[95%] pb-5 laptop:h-[90%] flex flex-col'>
           <Header />
 
-          <main className='w-full h-full flex justify-between items-center'>
-            <div className='max-w-[580px] flex flex-col gap-[17px]'>
-              <div className='flex flex-col gap-3'>
-                <h1 className='text-heroDesktop w-[16ch] text-brandWhite font-medium '>
+          <main className='w-full h-full pt-[40px] flex flex-col justify-between items-center xltablet:flex-row laptop:pt-0'>
+            <div className='xllaptop:max-w-[580px] flex flex-col gap-4 laptop:gap-12'>
+              <div className='flex flex-col gap-4'>
+                <h1 className='text-[28px] leading-[32px] font-bold w-[16ch] tablet:w-[25ch] text-brandWhite xltablet:w-[16ch] laptop:text-[36px] laptop:leading-[36px] xllaptop:text-[52px] xllaptop:leading-[52px] laptop:font-medium'>
                   Making Lifestyle and work easy for all tech enthusiasts across
                   Africa
                 </h1>
-                <p className='text-[rgba(244,247,255,0.8)] text-xl w-[40ch]'>
+                <p className='text-lg text-brandWhite w-[25ch] tablet:w-[40ch] xltablet:text-xl xltablet:w-[25ch] laptop:w-[35ch] xllaptop:w-[40ch]'>
                   We provide estates with custom Apartments, dedicated workspace
                   & online Marketplace for tech enthusiasts
                 </p>
@@ -34,8 +34,12 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className='max-w-[525px] h-auto'>
-              <img src={heroImage} alt='' className='w-full object-cover' />
+            <div className='h-[50%] xltablet:h-auto xltablet:max-w-[45%] xllaptop:w-[480px] desktop:w-[525px]'>
+              <img
+                src={heroImage}
+                alt=''
+                className='h-full xltablet:h-auto xltablet:w-full object-cover'
+              />
             </div>
           </main>
         </div>

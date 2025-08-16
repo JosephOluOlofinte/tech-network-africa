@@ -7,7 +7,7 @@ module.exports = {
       mobile: '375px',
       xlmobile: '480px',
       tablet: '640px',
-      xltablet: '768px',
+      xltablet: '810px',
       laptop: '1024px',
       xllaptop: '1280px',
       desktop: '1440px',
@@ -16,11 +16,6 @@ module.exports = {
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
-      },
-      fontSize: {
-        heroMobile: [],
-        heroTab: [],
-        heroDesktop: ['52px', '52px'],
       },
       colors: {
         brandBlue1: '#001968',

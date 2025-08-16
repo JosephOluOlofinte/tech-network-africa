@@ -18,47 +18,47 @@ const Header = () => {
 
   return (
     <Fragment>
-      <header className='h-[85px] flex justify-center items-center'>
+      <header className='h-[60px] laptop:h-[85px] flex justify-center items-center'>
         <div className='bg-white h-full w-full flex justify-center items-center rounded-[100px] shadow-md'>
-          <div className='w-[95%] h-full flex justify-between items-center'>
-            <div className='h-[50px]'>
+          <div className='w-[90%] h-full flex justify-between items-center'>
+            <div className='h-[40px] laptop:h-[50px]'>
               <img src={logo} alt='TNA logo' className='h-full' />
             </div>
 
-            <nav className='hidden laptop:block'>
-              <ul className='h-full flex items-center xllaptop:gap-[22px]'>
+            <nav className='hidden xltablet:block'>
+              <ul className='h-full flex items-center gap-4 xllaptop:gap-[22px]'>
                 <li>
                   <NavLink
                     to='/'
-                    className='py-3 px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
                     Home
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='/about'
-                    className='py-3 px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3  laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
                     About us
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='/our-estate'
-                    className='py-3 px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
                     Our Estate
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='/marketplace'
-                    className='py-3 px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
                     Marketplace
                   </NavLink>
                 </li>
               </ul>
             </nav>
 
-            <div className='hidden laptop:flex h-full items-center gap-3'>
+            <div className='hidden xltablet:flex h-full items-center gap-3'>
               <Button
                 variant='tertiary'
                 size='regular'
@@ -77,7 +77,7 @@ const Header = () => {
 
             {/* MOBILE Menu */}
             <div
-              className='laptop:hidden hover:cursor-pointer
+              className='xltablet:hidden hover:cursor-pointer
                 hover:scale-110 duration-400'
               onClick={dropdown}>
               <svg
