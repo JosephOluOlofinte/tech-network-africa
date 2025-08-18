@@ -23,7 +23,7 @@ const Mission = () => {
             </p>
           </div>
 
-          <div className='w-full grid grid-cols-2 gap-5'>
+          <div className='w-full grid justify-center laptop:grid-cols-[repeat(2,_minmax(335px,_1fr))] gap-6'>
             <MissionCard
               title='Energy Efficient'
               desc='We have Integrated energy-efficient systems like solar
