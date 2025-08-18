@@ -14,6 +14,53 @@
     @apply bg-transparent;
     @apply border-gray-300;
   }
+
+  /* Typography */
+
+  h1 {
+    @apply text-4xl;
+    @apply tablet:text-5xl;
+    @apply desktop:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+    @apply tablet:text-4xl;
+    @apply desktop:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+    @apply tablet:text-3xl;
+    @apply desktop:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl;
+    @apply tablet:text-2xl;
+    @apply desktop:text-3xl;
+  }
+
+  h5 {
+    @apply text-lg;
+    @apply tablet:text-xl;
+    @apply desktop:text-2xl;
+    @apply font-semibold;
+  }
+
+  h6 {
+    @apply text-base;
+    @apply tablet:text-lg;
+    @apply desktop:text-xl;
+    @apply font-semibold;
+
+  }
+
+  p {
+    @apply text-base;
+    @apply tablet:text-lg;
+    @apply desktop:text-xl;
+  }
 }
 
 @layer utilities {

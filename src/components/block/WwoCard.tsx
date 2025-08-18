@@ -12,7 +12,7 @@ type CardProps = {
 const WwoCard: React.FC<CardProps> = ({ title, body }) => {
   return (
     <div className='rounded-[20px] border-2 border-brandBlue5 py-[35px] px-[25px] grid gap-5 w-[380px]'>
-      <h3 className='text-[30px] leading-[38px] text-brandDeepGray100 font-medium tracking-normal'>
+      <h3 className='text- text-brandDeepGray100 font-medium tracking-normal xllaptop:text-3xl '>
         {title}
       </h3>
       <p className='text-lg text-brandDeepGray100'>{body}</p>
