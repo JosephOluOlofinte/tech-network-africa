@@ -16,36 +16,37 @@
   }
 
   /* Typography */
-
   h1 {
-    @apply text-4xl;
-    @apply tablet:text-5xl;
-    @apply desktop:text-6xl;
-  }
-
-  h2 {
     @apply text-3xl;
     @apply tablet:text-4xl;
     @apply desktop:text-5xl;
   }
 
-  h3 {
+  h2 {
     @apply text-2xl;
     @apply tablet:text-3xl;
     @apply desktop:text-4xl;
   }
 
-  h4 {
+  h3 {
     @apply text-xl;
     @apply tablet:text-2xl;
     @apply desktop:text-3xl;
   }
 
-  h5 {
+  h4 {
     @apply text-lg;
     @apply tablet:text-xl;
     @apply desktop:text-2xl;
     @apply font-semibold;
+  }
+
+  h5 {
+    @apply text-base;
+    @apply tablet:text-lg;
+    @apply desktop:text-xl;
+    @apply font-semibold;
+
   }
 
   h6 {
@@ -53,15 +54,15 @@
     @apply tablet:text-lg;
     @apply desktop:text-xl;
     @apply font-semibold;
-
   }
 
   p {
-    @apply text-base;
-    @apply tablet:text-lg;
-    @apply desktop:text-xl;
+    @apply text-sm;
+    @apply tablet:text-base;
+    @apply desktop:text-lg;
   }
 }
+
 
 @layer utilities {
   .bg-hero {

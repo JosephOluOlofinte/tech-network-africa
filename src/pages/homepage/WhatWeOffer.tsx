@@ -9,13 +9,11 @@ const WhatWeOffer = () => {
       <section className='bg-brandWhite flex h-fit justify-center'>
         <div className='inner-container h-full'>
           <header className='h-[150px] flex items-center'>
-            <h2 className='font-medium text-brandBlue100'>
-              What we offer
-            </h2>
+            <h2 className='font-medium text-brandBlue100'>What we offer</h2>
           </header>
 
-          <div className='min-h-[500px] pb-[50px]'>
-            <div className='w-full grid grid-flow-row gap-[22.5] xltablet:grid-flow-col'>
+          <div className='min-h-[500px] w-full pb-[50px]'>
+            <div className='w-full grid grid-cols-[repeat(auto-fill,_minmax(335px,_1fr))] gap-6 justify-center'>
               <WwoCard
                 title='Standard Customized Apartments'
                 body='We have arranged ultimate tech-inspired living experience,
