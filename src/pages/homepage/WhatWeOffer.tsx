@@ -6,9 +6,9 @@ import WwoCard from '../../components/block/WwoCard';
 const WhatWeOffer = () => {
   return (
     <Fragment>
-      <section className='bg-brandWhite flex h-fit justify-center'>
-        <div className='inner-container h-full'>
-          <header className='h-[150px] flex items-center'>
+      <section className='bg-brandWhite flex h-fit justify-center py-16 tablet:py-20 laptop:py-24'>
+        <div className='inner-container h-full grid gap-8 tablet:gap-12 laptop:gap-16'>
+          <header className='flex items-center'>
             <h2 className='font-medium text-brandBlue100'>What we offer</h2>
           </header>
 
