@@ -57,9 +57,9 @@
   }
 
   p {
-    @apply text-sm;
-    @apply tablet:text-base;
-    @apply desktop:text-lg;
+    @apply text-base;
+    @apply tablet:text-lg;
+    @apply desktop:text-xl;
   }
 }
 

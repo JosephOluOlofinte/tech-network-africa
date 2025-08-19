@@ -13,17 +13,17 @@ const Mission = () => {
         <div className='inner-container grid gap-[100px]'>
           <div className='grid gap-[15px] justify-center text-center'>
             <header>
-              <h2 className='text-4xl leading-[44px] font-bold text-[#0B0D12]'>
+              <h2 className='font-bold text-[#0B0D12]'>
                 We Are On A Mission
               </h2>
             </header>
-            <p className='text-2xl text-brandDeepGray2 w-[40ch]'>
+            <p className='text-brandDeepGray2 max-w-[32ch] xltablet:w-[40ch]'>
               To ensure living is convenient and apartments are equipped to
               break barriers in productivity constraints in the tech industry
             </p>
           </div>
 
-          <div className='w-full grid justify-center laptop:grid-cols-[repeat(2,_minmax(335px,_1fr))] gap-6'>
+          <div className='w-full grid place-items-center grid-cols-1 laptop:grid-cols-[repeat(2,_minmax(335px,_1fr))] gap-6'>
             <MissionCard
               title='Energy Efficient'
               desc='We have Integrated energy-efficient systems like solar

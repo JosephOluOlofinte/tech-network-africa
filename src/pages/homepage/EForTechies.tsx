@@ -15,9 +15,7 @@ const EForTechies = () => {
               </h2>
             </header>
             <p className='text-brandBlue5 text-lg leading-7 w-[21ch] tablet:w-[30ch] tablet:text-xl tablet:leading-8 laptop:w-[35ch] laptop:text-2xl laptop:leading-9'>
-              Embrace a tech-savvy neighbor, leaving behind discrimination and
-              misconceptions. Together, we can exchange innovative ideas and
-              foster a supportive community.
+              Embrace a tech-savvy neighbor, leaving behind discrimination and misconceptions. Together, we can exchange innovative ideas and foster a supportive community.
             </p>
             <Button
               variant='secondary'
