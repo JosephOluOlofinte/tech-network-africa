@@ -7,15 +7,15 @@ import TrendUp from '../../assets/svg_icons/TrendUp';
 const AnEstateMajorly = () => {
   return (
     <Fragment>
-      <section className='bg-brandWhite h-fit py-[100px] flex justify-center'>
-        <div className='inner-container grid gap-[100px]'>
+      <section className='bg-brandWhite h-fit pb-16 tablet:pb-20 laptop:pb-24 flex justify-center'>
+        <div className='inner-container grid gap-10 tablet:gap-13 laptop:gap-16'>
           <div className='grid gap-[15px] justify-center text-center'>
             <header>
-              <h2 className='text-4xl leading-[44px] font-bold text-[#0B0D12]'>
+              <h2 className='font-bold text-[#0B0D12]'>
                 An estate majorly for the tech industry
               </h2>
             </header>
-            <p className='text-2xl text-brandDeepGray2 w-[60ch]'>
+            <p className='text-brandDeepGray2 max-w-[60ch] text-center'>
               Here, you'll find more than just a place to live or work – you'll
               discover a vibrant community of like-minded individuals passionate
               about technology and its limitless possibilities.
