@@ -9,21 +9,19 @@ import MissionCard from '../../components/block/MissionCard';
 const Mission = () => {
   return (
     <Fragment>
-      <section className='bg-brandWhite h-fit py-[100px] flex justify-center'>
-        <div className='inner-container grid gap-[100px]'>
+      <section className='bg-brandWhite h-fit py-16 tablet:py-20 laptop:py-24 flex justify-center'>
+        <div className='inner-container grid gap-10 tablet:gap-13 laptop:gap-16'>
           <div className='grid gap-[15px] justify-center text-center'>
             <header>
-              <h2 className='font-bold text-[#0B0D12]'>
-                We Are On A Mission
-              </h2>
+              <h2 className='font-bold text-[#0B0D12]'>We Are On A Mission</h2>
             </header>
-            <p className='text-brandDeepGray2 max-w-[32ch] xltablet:w-[40ch]'>
+            <p className='text-brandDeepGray2 max-w-[45ch]'>
               To ensure living is convenient and apartments are equipped to
               break barriers in productivity constraints in the tech industry
             </p>
           </div>
 
-          <div className='w-full grid place-items-center grid-cols-1 laptop:grid-cols-[repeat(2,_minmax(335px,_1fr))] gap-6'>
+          <div className='w-full grid place-items-center grid-cols-1 xltablet:grid-cols-[repeat(2,_minmax(335px,_1fr))] gap-6'>
             <MissionCard
               title='Energy Efficient'
               desc='We have Integrated energy-efficient systems like solar

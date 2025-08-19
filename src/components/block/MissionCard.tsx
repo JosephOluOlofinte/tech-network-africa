@@ -12,18 +12,18 @@ type CardProps = {
 const MissionCard: React.FC<CardProps> = ({ title, desc, img, className }) => {
   // declare classes common to all card
   const commonStyles =
-    'tablet:h-[285px] w-full tablet:w-fit max-w-[600px] rounded-[20px] flex overflow-hidden';
+    'tablet:h-[285px] w-full tablet:w-full max-w-[600px] rounded-[20px] flex overflow-hidden';
 
   // let common styles be merged with classname styles
   const styles = `${commonStyles} ${className}`;
 
   return (
     <div className={styles}>
-      <div className='py-8 max-tablet:px-8 grid gap-8 tablet:gap-3 tablet:pl-8'>
+      <div className='py-8 px-8 grid gap-8  '>
         
         <div className='h-fit grid gap-3'>
           <h3 className='font-bold'>{title}</h3>
-          <p className='text-brandDeepGray2 font-medium max-w-[35ch] tablet:w-[30ch]'>
+          <p className='text-brandDeepGray2 font-medium max-w-[35ch]'>
             {desc}
           </p>
         </div>
@@ -38,7 +38,7 @@ const MissionCard: React.FC<CardProps> = ({ title, desc, img, className }) => {
         </div>
       </div>
 
-      <div className='h-full max-tablet:hidden'>
+      <div className='h-full max-xllaptop:hidden'>
         <img src={img} alt='' className='h-full w-auto bg-cover' />
       </div>
     </div>
