@@ -39,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   // decalre baseStyles i.e., styles common to all buttons
   const baseStyles =
-    'rounded-[100px] text-sm laptop:text-base font-inter font-medium border transition-all ease-in-out duration-300';
+    'w-fit flex items-center justify-center rounded-[100px] text-sm laptop:text-base font-inter font-medium border transition-all ease-in-out duration-300';
 
   // declare variantStyles i.e, style unique to each variant
   const variantStyles: Record<ButtonVariants, string> = {
