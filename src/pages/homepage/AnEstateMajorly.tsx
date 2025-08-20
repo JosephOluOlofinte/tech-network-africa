@@ -22,7 +22,7 @@ const AnEstateMajorly = () => {
             </p>
           </div>
 
-          <div className='grid grid-cols-2'>
+          <div className='flex flex-col-reverse gap-8 xltablet:grid xltablet:grid-cols-2'>
             <div className='w-full max-w-[510px] grid grid-rows-2 gap-[70px]'>
               <AnEstateMajorlyCard
                 Icon={LinkBold}
@@ -39,7 +39,7 @@ const AnEstateMajorly = () => {
               />
             </div>
 
-            <div className='self-center w-full max-w-[610px]'>
+            <div className='self-center w-full max-xltablet:max-w-[400px] xltablet:max-w-[610px]'>
               <img src={image} alt='' className='object-cover w-full' />
             </div>
           </div>
