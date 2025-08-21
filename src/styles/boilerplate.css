@@ -9,10 +9,10 @@ html,
   box-sizing: border-box;
 }
 
-
 .container {
   max-width: 1440px !important;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Base font styles for the document */
@@ -34,5 +34,3 @@ h5,
 h6 {
   letter-spacing: -2%;
 }
-
-
