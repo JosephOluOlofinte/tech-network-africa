@@ -12,7 +12,7 @@ type CardProps = {
 const MissionCard: React.FC<CardProps> = ({ title, desc, img, className }) => {
   // declare classes common to all card
   const commonStyles =
-    'tablet:h-[285px] w-full tablet:w-full max-w-[600px] rounded-[20px] flex overflow-hidden';
+    'tablet:max-xllaptop:h-[265px] xllaptop:h-[285px] w-full tablet:w-full max-w-[600px] rounded-[20px] flex overflow-hidden';
 
   // let common styles be merged with classname styles
   const styles = `${commonStyles} ${className}`;
