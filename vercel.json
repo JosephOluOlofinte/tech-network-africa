@@ -1,15 +1,11 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
   "routes": [
-    {
-      "src": "/(*)",
-      "dest": "index.html"
-    }
+    { "src": "/", "dest": "/" },
+    { "src": "/about", "dest": "/" },
+    { "src": "/our-estate", "dest": "/" },
+    { "src": "/marketplace", "dest": "/" },
+    { "src": "/product", "dest": "/" },
+    { "src": "/auth/sign-in", "dest": "/" },
+    { "src": "/auth/join-network", "dest": "/" }
   ]
 }
