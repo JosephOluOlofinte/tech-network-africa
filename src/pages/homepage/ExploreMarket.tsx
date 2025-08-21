@@ -51,46 +51,6 @@ const ExploreMarket = () => {
           </div>
         </div>
 
-        {/* ONLY VISIBLE ON XLTABLET AND HIGEHR */}
-        {/* <div className='inner-container hidden xltablet:grid xltablet:grid-cols-2 gap-8'>
-          <div className='h-fit grid gap-[25px] self-center'>
-            <header className='w-full max-w-[50ch]'>
-              <h2 className='text-5xl leading-[60px] font-bold text-brandWhite'>
-                Explore our Marketplace for affordable gadget
-              </h2>
-            </header>
-            <p className='w-full max-w-[42ch] text-xl font-medium text-brandWhite'>
-              Our marketplace allows users to buy and sell gently used gadgets,
-              facilitating upgrades and making it easier for everyone to afford
-              gadgets and kickstart their tech career effortlessly.
-            </p>
-
-            <div className='h-fit grid gap-[24px]'>
-              <ExploreMarketCard
-                title='Secured Transactions process'
-                desc='Our platform offers escrow services, whereby funds are held
-                    securely until both parties fulfill their obligations.'
-              />
-
-              <ExploreMarketCard
-                title='Fairly used Items Only'
-                desc='Offering fairly used gadgets increases accessibility to
-                    technology for individuals who may not be able to afford
-                    brand-new items.'
-              />
-
-              <Button
-                variant='secondary'
-                text='Read More'
-                className='!text-brandDeepGray100'
-              />
-            </div>
-          </div>
-
-          <div className='xltablet:absolute bottom-0 right-0 w-full max-w-[730px]'>
-            <img src={iPhone} alt='' className='object-cover w-full' />
-          </div>
-        </div> */}
       </section>
     </Fragment>
   );

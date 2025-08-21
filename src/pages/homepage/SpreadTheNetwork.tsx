@@ -13,14 +13,12 @@ const SpreadTheNetwork = () => {
       <section className='bg-brandWhite h-fit py-[100px] flex justify-center'>
         <div className='inner-container grid gap-[42px]'>
           <header className='w-full max-w-[50ch]'>
-            <h2 className='text-4xl leading-[44px] font-bold text-brandBlack'>
-              Spread The Network
-            </h2>
+            <h2 className='font-bold text-brandBlack'>Spread The Network</h2>
           </header>
 
-          <div className='w-full grid grid-cols-2'>
-            <div className='w-full justify-self-start max-w-[590px] bg-brandBlue3 rounded-[10px] p-9 grid gap-4'>
-              <h3 className='text-brandWhite text-[32px] leading-tight font-bold'>
+          <div className='w-full grid gap-6 xltablet:grid-cols-2'>
+            <div className='w-full max-w-[590px] bg-brandBlue3 rounded-[10px] p-9 grid gap-4 grid-rows-[min-content,_1fr,_min-content]'>
+              <h3 className='text-brandWhite font-bold max-w-[22ch]'>
                 Connect with us and stay updated on latest gist
               </h3>
               <p className='text-brandWhite text-lg font-medium'>
@@ -28,7 +26,7 @@ const SpreadTheNetwork = () => {
                 updates, and engaging content leading up to the big reveal of
                 our flagship product.
               </p>
-              <div className='text-brandWhite flex items-center gap-3'>
+              <div className='text-brandWhite flex items-center gap-3 pt-4'>
                 <a href=''>
                   <img src={fb} alt='' className='size-10' />
                 </a>
@@ -44,8 +42,8 @@ const SpreadTheNetwork = () => {
               </div>
             </div>
 
-            <div className='w-full justify-self-end max-w-[590px] bg-brandGreen3 rounded-[10px] p-9 grid gap-4'>
-              <h3 className='text-brandWhite text-[32px] leading-tight font-bold'>
+            <div className='w-full max-w-[590px] bg-brandGreen3 rounded-[10px] p-9 grid gap-4'>
+              <h3 className='text-brandWhite font-bold max-w-[20ch]'>
                 Tell Your Tech Bro and Tech Sis About Us
               </h3>
               <p className='text-brandWhite text-lg font-medium'>
@@ -53,8 +51,10 @@ const SpreadTheNetwork = () => {
                 friends, team, and colleagues. Together, let's make the tech
                 industry a welcoming home for everyone!
               </p>
-              <div className='text-brandWhite'>
-                <a href='' className='flex items-center justify-center gap-2 w-fit border border-white rounded-[28px] py-[10px] px-[20px] text-sm font-medium'>
+              <div className='text-brandWhite pt-4'>
+                <a
+                  href=''
+                  className='flex items-center justify-center gap-2 w-fit border border-white rounded-[28px] py-[10px] px-[20px] text-sm font-medium'>
                   Share Circles <img src={share} alt='' className='size-5' />
                 </a>
               </div>
