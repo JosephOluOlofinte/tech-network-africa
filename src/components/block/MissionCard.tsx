@@ -19,7 +19,7 @@ const MissionCard: React.FC<CardProps> = ({ title, desc, img, className }) => {
 
   return (
     <div className={styles}>
-      <div className='py-8 px-8 grid gap-8  '>
+      <div className='py-8 px-8 grid gap-8 grid-rows-[1fr,_fit-content]'>
         
         <div className='h-fit grid gap-3'>
           <h3 className='font-bold'>{title}</h3>

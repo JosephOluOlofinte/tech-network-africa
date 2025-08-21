@@ -1,11 +1,5 @@
 {
   "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/about", "dest": "/" },
-    { "src": "/our-estate", "dest": "/" },
-    { "src": "/marketplace", "dest": "/" },
-    { "src": "/product", "dest": "/" },
-    { "src": "/auth/sign-in", "dest": "/" },
-    { "src": "/auth/join-network", "dest": "/" }
+    { "src": "/(.*)", "dest": "/" }
   ]
 }
