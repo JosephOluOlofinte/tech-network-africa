@@ -56,14 +56,14 @@ const Contact = () => {
 
   return (
     <section className=' min-h-[calc(100vh-100px)] flex justify-center'>
-      <div className='inner-container grid grid-cols-[50%,_1fr] grid-rows-1'>
+      <div className='inner-container grid grid-cols-[60%,_1fr] grid-rows-[min-content]'>
         <div className='hidden laptop:block'>
-          <img src={contactImg} alt='' className='w-full h-auto -translate-x-[11%]'/>
+          <img src={contactImg} alt='' className='w-full h-auto -translate-x-[18%]'/>
         </div>
 
-        <div className='py-[80px] flex laptop:justify-end bg-red-200'>
-          <div className='w-[95%] grid max-h-fit gap-12'>
-            <div className='grid gap-[15px]'>
+        <div className='py-[70px] w-full'>
+          <div className='w-full grid max-h-fit gap-10'>
+            <div className='grid gap-[12px]'>
               <header>
                 <h2 className='font-bold text-[#0B0D12]'>
                   Contact us to know more

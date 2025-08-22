@@ -16,7 +16,7 @@ const SpreadTheNetwork = () => {
             <h2 className='font-bold text-brandBlack'>Spread The Network</h2>
           </header>
 
-          <div className='w-full grid gap-6 xltablet:grid-cols-2 xltablet:justify-between bg-red-200'>
+          <div className='w-full grid gap-6 xltablet:grid-cols-2 xltablet:justify-between'>
             <div className='w-full max-w-[590px] bg-brandBlue3 rounded-[10px] p-9 grid gap-4 grid-rows-[min-content,_1fr,_min-content]'>
               <h3 className='text-brandWhite font-bold max-w-[22ch]'>
                 Connect with us and stay updated on latest gist
