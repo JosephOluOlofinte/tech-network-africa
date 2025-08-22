@@ -56,14 +56,20 @@ const Contact = () => {
 
   return (
     <section className=' min-h-[calc(100vh-100px)] flex justify-center'>
-      <div className='inner-container grid grid-cols-[60%,_1fr] grid-rows-[min-content]'>
+      <div className='inner-container max-laptop:max-w-[500px] grid laptop:grid-cols-[60%,_1fr] grid-rows-[min-content]'>
         <div className='hidden laptop:block'>
-          <img src={contactImg} alt='' className='w-full h-auto -translate-x-[18%]'/>
+          <img
+            src={contactImg}
+            alt=''
+            className='w-full h-auto max-h-[980px] -translate-x-[18%]'
+          />
         </div>
 
-        <div className='py-[70px] w-full'>
-          <div className='w-full grid max-h-fit gap-10'>
-            <div className='grid gap-[12px]'>
+        <div className='py-[70px] min-[1024px]:max-[1210px]:pt-[50px] min-[1340px]:max-[1440px]:pt-[100px] w-full'>
+
+          <div className='w-full grid max-h-fit gap-10 min-[1024px]:max-[1210px]:gap-5'>
+
+            <div className='grid gap-[12px] tablet:max-laptop:text-center'>
               <header>
                 <h2 className='font-bold text-[#0B0D12]'>
                   Contact us to know more
@@ -77,7 +83,7 @@ const Contact = () => {
 
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className='grid gap-8 max-h-fit'>
+              className='grid gap-8 min-[1070px]:max-[1150px]:gap-6 min-[1024px]:max-[1069px]:gap-4 max-h-fit'>
               {/* Full name */}
               <div>
                 <label className='block mb-1'>Full name</label>
