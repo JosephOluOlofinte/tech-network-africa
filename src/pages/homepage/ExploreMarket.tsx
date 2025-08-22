@@ -6,12 +6,11 @@ import ExploreMarketCard from '../../components/block/ExploreMarketCard';
 const ExploreMarket = () => {
   return (
     <Fragment>
-      <section className='bg-brandGreen3 pt-[100px] min-[1400px]:pt-[120px] pb-[50px] xllaptop:pb-[100px] relative flex justify-center'>
-        
+      <section className='bg-brandGreen3 py-16 tablet:py-20 laptop:py-24 min-[1400px]:pt-[120px] pb-[50px] xllaptop:pb-[100px] relative flex justify-center'>
         <div className='inner-container flex flex-col gap-8 relative'>
           <div className='h-fit grid gap-[25px] xltablet:w-2/4 max-xltablet:self-center'>
             <header>
-              <h2 className='text-3xl font-bold text-brandWhite w-[12ch] xltablet:w-[16ch]'>
+              <h2 className='text-3xl font-bold text-brandWhite max-w-[16ch]'>
                 Explore our Marketplace for affordable gadgets
               </h2>
             </header>
@@ -23,7 +22,6 @@ const ExploreMarket = () => {
           </div>
 
           <div className='w-full max-xltablet:flex max-xltablet:flex-col-reverse xltablet:grid xltablet:grid-cols-2 items-center justify-center  gap-8 overflow-visible relative'>
-
             <div className='h-fit grid gap-[24px] max-xltablet:-translate-y-12'>
               <ExploreMarketCard
                 title='Secured Transactions process'
@@ -50,7 +48,6 @@ const ExploreMarket = () => {
             </div>
           </div>
         </div>
-
       </section>
     </Fragment>
   );

@@ -3,6 +3,7 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
 import { Button } from '../block';
+import contactImg from '../../assets/images/contactImg.png';
 
 const Schema = z.object({
   fullName: z.string().min(2, 'Full name is required'),
@@ -54,19 +55,21 @@ const Contact = () => {
   };
 
   return (
-    <section className='bg-home-contact min-h-[calc(100vh-100px)] flex justify-center'>
-      <div className='inner-container grid grid-cols-[repeat(3,_1fr)] justify-between'>
-        <div className=''></div>
+    <section className=' min-h-[calc(100vh-100px)] flex justify-center'>
+      <div className='inner-container grid grid-cols-[50%,_1fr] grid-rows-1'>
+        <div className='hidden laptop:block'>
+          <img src={contactImg} alt='' className='w-full h-auto -translate-x-[11%]'/>
+        </div>
 
-        <div className='py-[80px] col-span-2 flex justify-end'>
-          <div className='grid max-h-fit gap-12'>
+        <div className='py-[80px] flex laptop:justify-end bg-red-200'>
+          <div className='w-[95%] grid max-h-fit gap-12'>
             <div className='grid gap-[15px]'>
               <header>
-                <h2 className='text-[30px] leading-[38px] font-bold text-[#0B0D12]'>
+                <h2 className='font-bold text-[#0B0D12]'>
                   Contact us to know more
                 </h2>
               </header>
-              <p className='text-xl leading-[30px] text-brandDeepGray500 w-[35ch]'>
+              <p className='text-brandDeepGray500 max-w-[35ch]'>
                 Kindly share the following details for us to get in touch with
                 you.
               </p>
@@ -74,7 +77,7 @@ const Contact = () => {
 
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className='max-w-lg grid gap-8 max-h-fit'>
+              className='grid gap-8 max-h-fit'>
               {/* Full name */}
               <div>
                 <label className='block mb-1'>Full name</label>

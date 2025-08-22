@@ -10,13 +10,13 @@ import share from '../../assets/img_icons/share.png'
 const SpreadTheNetwork = () => {
   return (
     <Fragment>
-      <section className='bg-brandWhite h-fit py-[100px] flex justify-center'>
+      <section className='bg-brandWhite h-fit py-16 tablet:py-20 laptop:py-24 flex justify-center'>
         <div className='inner-container grid gap-[42px]'>
           <header className='w-full max-w-[50ch]'>
             <h2 className='font-bold text-brandBlack'>Spread The Network</h2>
           </header>
 
-          <div className='w-full grid gap-6 xltablet:grid-cols-2'>
+          <div className='w-full grid gap-6 xltablet:grid-cols-2 xltablet:justify-between bg-red-200'>
             <div className='w-full max-w-[590px] bg-brandBlue3 rounded-[10px] p-9 grid gap-4 grid-rows-[min-content,_1fr,_min-content]'>
               <h3 className='text-brandWhite font-bold max-w-[22ch]'>
                 Connect with us and stay updated on latest gist
@@ -42,7 +42,7 @@ const SpreadTheNetwork = () => {
               </div>
             </div>
 
-            <div className='w-full max-w-[590px] bg-brandGreen3 rounded-[10px] p-9 grid gap-4'>
+            <div className='w-full max-w-[590px] bg-brandGreen3 rounded-[10px] p-9 grid gap-4 justify-self-end'>
               <h3 className='text-brandWhite font-bold max-w-[20ch]'>
                 Tell Your Tech Bro and Tech Sis About Us
               </h3>
