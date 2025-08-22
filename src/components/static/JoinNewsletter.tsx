@@ -3,7 +3,7 @@
 const JoinNewsletter = () => {
   return (
     <section className='bg-brandWhite py-5 flex justify-center items-center h-fit min-h-[165px]'>
-      <div className='inner-container h-[80%] grid grid-rows-[min-content,0,min-content] max-xltablet:gap-[clamp(15px,4vw,25px)] xltablet:grid-cols-3'>
+      <div className='inner-container h-[80%] grid grid-rows-[min-content,0,min-content] max-xltablet:gap-[clamp(15px,4vw,25px)] xltablet:grid-cols-[1fr,auto,1fr] items-center'>
         <div className='grid gap-2'>
           <header>
             <h2 className='text-[clamp(18px,2vw,24px)] font-bold'>

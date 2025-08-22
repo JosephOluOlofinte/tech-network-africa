@@ -10,9 +10,9 @@ import ig from '../../assets/img_icons/In-footer.png'
 
 const Footer = () => {
   return (
-    <footer className='h-[530px] max-h-[1012px] bg-brandBlue100 flex justify-center items-center'>
-      <div className='inner-container h-[80%] text-brandWhite flex flex-col justify-between'>
-        <div className='grid grid-cols-[auto_auto_auto_auto] justify-between'>
+    <footer className='min-h-[530px] max-h-[1012px] bg-brandBlue100 flex justify-center items-center py-16 tablet:py-20 laptop:py-24'>
+      <div className='inner-container text-brandWhite flex flex-col gap-16 justify-between'>
+        <div className='h-fit grid gap-14 tablet:grid-cols-[auto_auto] laptop:grid-cols-[auto_auto_auto_auto] tablet:justify-between'>
           <div className='grid gap-3 h-max'>
             <h2 className='text-[32px] leading-[120%] font-bold max-w-[15ch]'>
               Explore: Take your tech career into a new dimension
@@ -79,7 +79,26 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='h-[105px] py-7 px-8 bg-white rounded-[10px] flex justify-between items-center'>
+        {/* mobile menu for smaller devices */}
+        <div className='min-h-[105px] py-7 px-8 bg-white rounded-[10px] grid gap-6 items-center place-items-center xltablet:hidden'>
+          <div className='flex items-center gap-[clamp(10px,3vw,40px)]'>
+            <div className='h-[50px]'>
+              <img src={logo} alt='' className='h-full w-auto' />
+            </div>
+            <div className='grid grid-cols-[auto_auto_auto_auto] gap-3'>
+              <img src={fb} alt='' className='size-6' />
+              <img src={x} alt='' className='size-6' />
+              <img src={Li} alt='' className='size-6' />
+              <img src={ig} alt='' className='size-6' />
+            </div>
+          </div>
+          <p className='text-sm text-[#1D2739]'>
+            © 2024 Israelajala. All rights reserved.
+          </p>
+        </div>
+
+        {/* mobile menu for larger devices */}
+        <div className='hidden h-[105px] py-7 px-8 bg-white rounded-[10px] xltablet:flex justify-between items-center'>
           <div className='grid grid-cols-[auto_auto_auto_auto] gap-6'>
             <img src={fb} alt='' className='size-6' />
             <img src={x} alt='' className='size-6' />
