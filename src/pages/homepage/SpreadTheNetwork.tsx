@@ -16,12 +16,12 @@ const SpreadTheNetwork = () => {
             <h2 className='font-bold text-brandBlack'>Spread The Network</h2>
           </header>
 
-          <div className='w-full grid gap-6 xltablet:grid-cols-2 xltablet:justify-between'>
-            <div className='w-full max-w-[590px] bg-brandBlue3 rounded-[10px] p-9 grid gap-4 grid-rows-[min-content,_1fr,_min-content]'>
+          <div className='w-full grid gap-6 max-xltablet:grid-rows-2 xltablet:grid-cols-2 justify-center xltablet:justify-between'>
+            <div className='w-full xltablet:max-w-[590px] bg-brandBlue3 rounded-[10px] p-9 grid gap-4 grid-rows-[min-content,_1fr,_min-content]'>
               <h3 className='text-brandWhite font-bold max-w-[22ch]'>
                 Connect with us and stay updated on latest gist
               </h3>
-              <p className='text-brandWhite text-lg font-medium'>
+              <p className='text-brandWhite text-lg font-medium max-w-[45ch]'>
                 Follow us on our socials for behind-the-scenes glimpses,
                 updates, and engaging content leading up to the big reveal of
                 our flagship product.
@@ -42,11 +42,11 @@ const SpreadTheNetwork = () => {
               </div>
             </div>
 
-            <div className='w-full max-w-[590px] bg-brandGreen3 rounded-[10px] p-9 grid gap-4 justify-self-end'>
+            <div className='w-full xltablet:max-w-[590px] bg-brandGreen3 rounded-[10px] p-9 grid gap-4 grid-rows-[min-content,_1fr,_min-content]'>
               <h3 className='text-brandWhite font-bold max-w-[20ch]'>
                 Tell Your Tech Bro and Tech Sis About Us
               </h3>
-              <p className='text-brandWhite text-lg font-medium'>
+              <p className='text-brandWhite text-lg font-medium max-w-[45ch]'>
                 Help us grow Africa's tech network. Share this page with your
                 friends, team, and colleagues. Together, let's make the tech
                 industry a welcoming home for everyone!

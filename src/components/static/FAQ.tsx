@@ -13,16 +13,16 @@ const FAQ = () => {
       <div className='inner-container grid gap-[70px] place-items-center'>
         <div className='grid gap-[15px] justify-center text-center'>
           <header>
-            <h2 className='text-4xl leading-[44px] font-bold text-[#0B0D12]'>
+            <h2 className='font-bold text-[#0B0D12]'>
               Frequently asked questions
             </h2>
           </header>
-          <p className='text-xl leading-[30px] text-brandDeepGray500'>
+          <p className='text-brandDeepGray500'>
             Everything you need to know about how TNA works
           </p>
         </div>
 
-        <Accordion className='w-[800px]'>
+        <Accordion className='w-full max-w-[650px]'>
           <AccordionChild title='How do I rent an apartment in the estate?'>
             <p>
               Download our mobile app here to browse through a wide selection of

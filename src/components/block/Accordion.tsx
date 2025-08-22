@@ -61,7 +61,7 @@ export const AccordionChild: React.FC<AccordionChildProps> = ({
 
   return (
     <div
-      className={`h-max border-b rounded-[10px] xltablet:px-[40px] lglaptop:px-[50px] w-full transition-all duration-1000 ${
+      className={`h-max border-b-2 rounded-[10px] xltablet:px-[40px] lglaptop:px-[50px] w-full transition-all duration-1000 ${
         isOpen ? 'py-[40px]' : 'py-[24px]'
       }`}>
       <button
@@ -112,7 +112,7 @@ export const AccordionChild: React.FC<AccordionChildProps> = ({
         style={{ maxHeight: `${height}px` }}>
         <div
           ref={contentRef}
-          className='pt-[10px] laptop:pt-[24px] h-fit text-brandDeepGray500 font-inter font-normal text-base'>
+          className='pt-[10px] pr-10 laptop:pt-[24px] h-fit text-brandDeepGray500 font-inter font-normal text-base'>
           {children}
         </div>
       </div>
