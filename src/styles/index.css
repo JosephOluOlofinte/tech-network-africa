@@ -92,5 +92,6 @@
   .bg-metrics {
     background-image: url('../assets//images//metrics-bg-lg-cropped.jpg');
     background-size: cover;
+    @apply max-laptop:bg-center;
   }
 }
