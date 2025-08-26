@@ -32,7 +32,7 @@ const Footer = () => {
               <li>
                 <NavLink to='' className='flex gap-4 items-baseline'>
                   Marketplace
-                  <span className='py-[2px] px-3 text-xs bg-brandWhite text-brandBlack rounded-2xl animate-bounce'>
+                  <span className='py-[2px] px-3 text-xs bg-brandWhite text-brandBlack rounded-2xl animate-pulse'>
                     Download App
                   </span>
                 </NavLink>
@@ -43,7 +43,7 @@ const Footer = () => {
               <li>
                 <NavLink to='' className='flex gap-4 items-baseline'>
                   Apartments
-                  <span className='py-[2px] px-3 text-xs bg-brandWhite text-brandBlack rounded-2xl animate-bounce'>
+                  <span className='py-[2px] px-3 text-xs bg-brandWhite text-brandBlack rounded-2xl animate-pulse'>
                     Available!
                   </span>
                 </NavLink>
