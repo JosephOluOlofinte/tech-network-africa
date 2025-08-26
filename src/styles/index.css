@@ -73,7 +73,7 @@
 
   .inner-container {
     @apply w-[90%];
-    @apply xllaptop:w-[83%];
+    @apply desktop:w-[83%];
   }
 
   .bg-e-for-techies {

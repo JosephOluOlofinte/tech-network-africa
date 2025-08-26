@@ -22,7 +22,7 @@ const AboutHero = () => {
               </p>
             </div>
 
-            <div className='bg-metrics p-[30px] tablet:p-[40px] xllaptop:p-[64px] w-full max-w-[1220px] grid laptop:grid-cols-[repeat(3,_auto)] gap-[32px] justify-center'>
+            <div className='bg-metrics py-[60px] px-3 w-full max-w-[1220px] flex flex-wrap laptop:grid laptop:grid-cols-[repeat(3,_auto)] gap-5 justify-center'>
               <MetricsCard
                 figure='1K+'
                 title='Built apartments'
