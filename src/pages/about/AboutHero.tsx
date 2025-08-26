@@ -12,17 +12,17 @@ const AboutHero = () => {
           <Header />
 
           <div className='w-full h-full flex flex-col justify-between gap-20 pt-[70px] pb-[30px]'>
-            <div className='text-center grid h-fit gap-5'>
-              <h1 className='text-[35px] tablet:text-[45px] xllaptop:text-[55px] text-brandDeepGray100 font-medium'>
+            <div className='text-center grid h-fit gap-1'>
+              <h1 className='text-[24px] tablet:text-[32px] laptop:text-[40px] desktop:text-[48px] text-brandDeepGray100 font-bold'>
                 TECH NETWORK AFRICA
               </h1>
-              <p className='text-brandDeepGray2 text-2xl pt-2'>
+              <p className='text-brandDeepGray2 text-base xltablet:text-lg xllaptop:text-xl font-medium pt-2'>
                 Making living and work convenient for enhanced productivity and
                 career growth.
               </p>
             </div>
 
-            <div className='bg-metrics py-[60px] px-3 w-full max-w-[1220px] flex flex-wrap laptop:grid laptop:grid-cols-[repeat(3,_auto)] gap-5 justify-center'>
+            <div className='bg-metrics py-8 laptop:py-12 px-4 w-full max-w-[1220px] flex flex-wrap laptop:grid laptop:grid-cols-[repeat(3,_auto)] gap-5 justify-center'>
               <MetricsCard
                 figure='1K+'
                 title='Built apartments'

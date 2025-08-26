@@ -6,21 +6,21 @@ import TransparentCard from '../../components/block/TransparentCard';
 const WhatYouMust = () => {
   return (
     <section className='bg-white h-fit py-[75px] flex justify-center'>
-      <div className='inner-container grid gap-[70px]'>
-        <div className='grid gap-5'>
+      <div className='inner-container grid gap-12'>
+        <div className='grid gap-4'>
           <header>
-            <h2 className='text-4xl leading-[44px] font-bold text-brandDeepGray900'>
+            <h2 className='font-bold text-brandDeepGray900 max-w-[20ch]'>
               What you must know about us
             </h2>
           </header>
-          <p className='text-xl text-brandDeepGray500 w-[60ch]'>
+          <p className='font-medium text-brandDeepGray500 max-w-[60ch]'>
             Success and convenience are our top priorities for everyone in the
             technological industry and this is what we do
           </p>
         </div>
 
-        <div className='w-full grid grid-cols-2 gap-5'>
-          <div className='bg-brandBlue2 py-6 px-8 w-[590px] h-[512px] grid grid-rows-[min-content,_1fr] gap-[105px]'>
+        <div className='flex max-xltablet:flex-col max-xltablet:items-center justify-center gap-5'>
+          <div className='bg-brandBlue2 py-6 px-8 w-full max-w-[590px] max-h-[512px] grid grid-rows-[min-content,_1fr] gap-[80px]'>
             <div className='w-[240px]'>
               <img src={apartments} alt='' />
             </div>
@@ -31,7 +31,7 @@ const WhatYouMust = () => {
             />
           </div>
 
-          <div className='bg-brandGreen3 py-6 px-8 w-[590px] h-[512px] grid grid-rows-[min-content,_1fr] gap-[105px]'>
+          <div className='bg-brandGreen3 py-6 px-8 w-full max-w-[590px] max-h-[512px] grid grid-rows-[min-content,_1fr] gap-[80px]'>
             <div className='w-[240px]'>
               <img src={marketplace} alt='' />
             </div>
