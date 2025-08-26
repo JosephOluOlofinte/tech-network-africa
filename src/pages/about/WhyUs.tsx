@@ -5,20 +5,20 @@ import WhyUsCard from '../../components/block/WhyUsCard';
 
 const WhyUs = () => {
   return (
-    <section className='bg-white h-fit py-[100px] flex justify-center'>
+    <section className='bg-white h-fit py-[50px] flex justify-center'>
       <div className='inner-container grid gap-[100px]'>
         <div className='overflow-visible'>
           <div className='relative max-w-[1200px]'>
-            <header className='absolute top-0'>
-              <h2 className='text-4xl leading-[44px] font-bold text-brandDeepGray900'>
-                Why us?
-              </h2>
+            <header className='xltablet:absolute top-0'>
+              <h2 className='font-bold text-brandDeepGray900'>Why us?</h2>
             </header>
-            <img src={banner} alt='' />
+            <div className='w-full'>
+              <img src={banner} alt='' className='w-full' />
+            </div>
           </div>
         </div>
 
-        <div className='grid grid-cols-[repeat(2,_minmax(350px,_565px))] justify-between gap-y-[100px]'>
+        <div className='grid grid-cols-[repeat(1,_minmax(320px,_565px))] xltablet:grid-cols-[repeat(2,_minmax(350px,_565px))] justify-center xltablet:justify-between gap-5 laptop:gap-8 desktop:gap-y-[100px]'>
           <WhyUsCard
             title='Highly experienced'
             desc='We have years of experience in the tech industry and we understand lots of shortcoming and challenges of all techies'

@@ -20,7 +20,7 @@ const WhatYouMust = () => {
         </div>
 
         <div className='flex max-xltablet:flex-col max-xltablet:items-center justify-center gap-5'>
-          <div className='bg-brandBlue2 py-6 px-8 w-full max-w-[590px] max-h-[512px] grid grid-rows-[min-content,_1fr] gap-[80px]'>
+          <div className='bg-brandBlue2 py-6 px-8 w-full max-h-[512px] grid grid-rows-[min-content,_1fr] gap-[80px]'>
             <div className='w-[240px]'>
               <img src={apartments} alt='' />
             </div>
@@ -31,7 +31,7 @@ const WhatYouMust = () => {
             />
           </div>
 
-          <div className='bg-brandGreen3 py-6 px-8 w-full max-w-[590px] max-h-[512px] grid grid-rows-[min-content,_1fr] gap-[80px]'>
+          <div className='bg-brandGreen3 py-6 px-8 w-full max-h-[512px] grid grid-rows-[min-content,_1fr] gap-[80px]'>
             <div className='w-[240px]'>
               <img src={marketplace} alt='' />
             </div>
