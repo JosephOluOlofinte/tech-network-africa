@@ -65,7 +65,13 @@
 
 
 @layer utilities {
-  .bg-hero {
+  .bg-home-hero {
+    background-image: url('../assets/images/estate-hero-bg.png');
+    background-size: cover;
+    background-position: center bottom;
+  }
+
+  .bg-estate-hero {
     background-image: url('../assets/images/aerial-view-private-houses-with-solar-panels-roofs.jpg');
     background-size: cover;
     background-position: center bottom;

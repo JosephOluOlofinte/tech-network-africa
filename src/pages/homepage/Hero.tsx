@@ -7,11 +7,11 @@ import heroImage from '../../assets/images/hero-image.png';
 const Hero = () => {
   return (
     <Fragment>
-      <section className='bg-hero h-[750px] flex justify-center items-center'>
+      <main className='bg-home-hero h-[800px] flex justify-center items-center'>
         <div className='inner-container h-[95%] pb-5 laptop:h-[90%] flex flex-col'>
           <Header />
 
-          <main className='w-full h-full pt-[40px] flex max-[639px]:flex-col justify-between items-center xltablet:flex-row laptop:pt-0'>
+          <section className='w-full h-full pt-[40px] flex max-[639px]:flex-col justify-between items-center xltablet:flex-row laptop:pt-0'>
             <div className='flex flex-col gap-4 laptop:gap-12 xllaptop:max-w-[580px]'>
               <div className='flex flex-col gap-4'>
                 <h1 className='text-[28px] leading-[32px] font-bold w-[16ch] text-brandWhite xlmobile:w-[18ch] tablet:w-[14ch] min-[740px]:w-[16ch] laptop:text-[36px] laptop:leading-[36px] xllaptop:text-[52px] xllaptop:leading-[52px] laptop:font-medium'>
@@ -42,9 +42,9 @@ const Hero = () => {
                 className='h-full tablet:h-auto tablet:w-full object-cover'
               />
             </div>
-          </main>
+          </section>
         </div>
-      </section>
+      </main>
     </Fragment>
   );
 };
