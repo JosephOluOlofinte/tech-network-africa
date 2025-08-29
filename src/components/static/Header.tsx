@@ -18,9 +18,9 @@ const Header = () => {
 
   return (
     <Fragment>
-      <header className='h-[60px] laptop:h-[85px] flex justify-center items-center'>
+      <header className='h-[60px] xltablet:h-[75px] laptop:h-[85px] flex justify-center items-center'>
         <div className='bg-white h-full w-full flex justify-center items-center rounded-[100px] shadow-md'>
-          <div className='w-[90%] h-full flex justify-between items-center'>
+          <div className='w-[90%] xltablet:max-laptop:w-[95%] h-full flex justify-between items-center'>
             <div className='h-[40px] laptop:h-[50px]'>
               <img src={logo} alt='TNA logo' className='h-full' />
             </div>

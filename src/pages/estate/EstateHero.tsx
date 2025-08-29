@@ -16,7 +16,7 @@ const EstateHero = () => {
                 <h1 className='text-[32px] leading-[32px] font-bold w-[16ch] text-brandWhite xlmobile:w-[18ch] tablet:w-[14ch] min-[740px]:w-[16ch] laptop:text-[42px] laptop:leading-[42px] xllaptop:text-[60px] xllaptop:leading-[60px] laptop:font-medium'>
                   Welcome to the Estate
                 </h1>
-                <p className='text-lg text-brandWhite w-[25ch] xlmobile:w-[30ch] tablet:w-[25ch] min-[740px]:w-[25ch] xltablet:text-xl laptop:w-[35ch] xllaptop:w-[40ch]'>
+                <p className='text-lg text-brandWhite w-[25ch] xlmobile:w-[30ch] xltablet:text-xl laptop:w-[35ch] xllaptop:w-[40ch]'>
                   We have built our apartments to ensure all techies have
                   equipped workstation to stay active in the industry
                 </p>
