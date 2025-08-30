@@ -52,6 +52,7 @@ module.exports = {
         brandOrange6: '#FFFAF5',
         brandWhite: '#F4F7FF',
         brandBlack: '#212121',
+        brandNeutral100: '#E7E7E7',
       },
       rotate: {
         11: '11deg',
