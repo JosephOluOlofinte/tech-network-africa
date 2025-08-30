@@ -1,7 +1,7 @@
 // import React from 'react'
 
-import { NavLink } from "react-router-dom";
-import houseImg from '../../assets/images/apartments.png'
+import { NavLink } from 'react-router-dom';
+import houseImg from '../../assets/images/apartments.png';
 
 const WeveCustomized = () => {
   return (
@@ -24,25 +24,41 @@ const WeveCustomized = () => {
           </div>
         </div>
 
-        <div className='py-14 flex max-tablet:flex-col-reverse gap-8 justify-center items-center'>
-          <img
-            src={houseImg}
-            alt=''
-            className='h-[200px] w-[265px] rounded-xl'
-          />
+        <div className='w-full py-14 flex max-tablet:flex-col-reverse justify-center items-center gap-5 flex-wrap'>
+          {/* THis is where I left. trying to setup perfect responsiveness */}
+          <div className='relative'>
+            <img
+              src={houseImg}
+              alt=''
+              className='h-[200px] w-[265px] rounded-xl'
+            />
+            <span className='bg-white py-[6px] px-3 rounded-3xl text-xs font-medium absolute top-8 left-4'>
+              New
+            </span>
+          </div>
 
-          <img
-            src={houseImg}
-            alt=''
-            className='h-[200px] w-[265px] rounded-xl'
-          />
+          <div className='relative'>
+            <img
+              src={houseImg}
+              alt=''
+              className='h-[200px] w-[265px] rounded-xl'
+            />
+            <span className='bg-white py-[6px] px-3 rounded-3xl text-xs font-medium absolute top-8 left-4'>
+              New
+            </span>
+          </div>
 
-          <img
-            src={houseImg}
-            alt=''
-            className='h-[200px] w-[265px] rounded-xl'
-          />
-          
+          <div className='relative'>
+            <img
+              src={houseImg}
+              alt=''
+              className='h-[200px] w-[265px] rounded-xl'
+            />
+            <span className='bg-white py-[6px] px-3 rounded-3xl text-xs font-medium absolute top-8 left-4'>
+              New
+            </span>
+          </div>
+
           <p className='font-medium w-[265px]'>
             <span className='font-semibold'>FACT:</span> New apartments cost
             more
@@ -58,6 +74,6 @@ const WeveCustomized = () => {
       </div>
     </section>
   );
-}
+};
 
-export default WeveCustomized
+export default WeveCustomized;
