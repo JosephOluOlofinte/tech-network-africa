@@ -4,32 +4,38 @@ import starIcon from '../../assets/img_icons/star-icon.png';
 import Button from './Button';
 
 type Props = {
-    houseImg: string;
+    productImg: string;
     newProduct: boolean;
-    productName: string;
+    name: string;
     price: string;
     url: string;
 }
 
-const ProductCard: React.FC<Props> = ({houseImg, newProduct = false, productName, price, url}) => {
+const ProductCard: React.FC<Props> = ({
+  productImg,
+  newProduct = false,
+  name,
+  price,
+  url,
+}) => {
   return (
-    <div className='relative border border-brandDeepGray4 rounded-xl overflow-hidden'>
-          <img src={houseImg} alt='' className='h-[200px] w-[265px]' />
-          {newProduct ? <span className='bg-white py-[6px] px-3 rounded-3xl text-xs text-brandGreen3 font-medium absolute top-8 left-4'>
-        New
-      </span> : null}
-      
+    <div className='relative border border-brandDeepGray4 rounded-xl overflow-hidden w-full max-w-[350px]'>
+      <img src={productImg} alt='' className='h-auto w-full' />
+      {newProduct ? (
+        <span className='bg-white py-[6px] px-3 rounded-3xl text-xs text-brandGreen3 font-medium absolute top-8 left-4'>
+          New
+        </span>
+      ) : null}
+
       <div className='p-3 grid gap-3'>
         {/* product name + heart */}
         <div className='flex justify-between items-center'>
-                  <p className='text-xl font-semibold'>{ productName }</p>
+          <p className='text-xl font-semibold'>{name}</p>
           <img src={heartIcon} alt='' className='size-5' />
         </div>
         {/* price + rating */}
         <div className='flex justify-between items-center'>
-          <p className='text-sm text-brandDeepGray100 font-semibold'>
-            { price }
-          </p>
+          <p className='text-sm text-brandDeepGray100 font-semibold'>{price}</p>
           <p className='text-xs flex items-center py-1 gap-1'>
             (5.0) <img src={starIcon} alt='' className='size-3' />
           </p>
@@ -42,7 +48,7 @@ const ProductCard: React.FC<Props> = ({houseImg, newProduct = false, productName
             variant='textBtn'
             size='small'
             text='View more'
-            url={ url }
+            url={url}
             className='!px-0'
           />
           <Button size='small' text='Contact Us' url='/contact-us' />
@@ -50,6 +56,6 @@ const ProductCard: React.FC<Props> = ({houseImg, newProduct = false, productName
       </div>
     </div>
   );
-}
+};
 
 export default ProductCard

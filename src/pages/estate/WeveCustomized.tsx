@@ -2,9 +2,8 @@
 
 import { NavLink } from 'react-router-dom';
 import houseImg from '../../assets/images/apartments.png';
-import heartIcon from '../../assets/img_icons/heart-icon.png'
-import starIcon from '../../assets/img_icons/star-icon.png'
-import { Button } from '../../components';
+
+import ProductCard from '../../components/block/ProductCard';
 
 const WeveCustomized = () => {
   return (
@@ -27,61 +26,30 @@ const WeveCustomized = () => {
           </div>
         </div>
 
-        <div className='w-full py-14 flex max-tablet:flex-col-reverse justify-center items-center gap-5 flex-wrap'>
-          
-          <div className='relative border border-brandDeepGray4 rounded-xl overflow-hidden'>
-            <img src={houseImg} alt='' className='h-[200px] w-[265px]' />
-            <span className='bg-white py-[6px] px-3 rounded-3xl text-xs text-brandGreen3 font-medium absolute top-8 left-4'>
-              New
-            </span>
-            <div className='p-3 grid gap-3'>
-              {/* product name + heart */}
-              <div className='flex justify-between items-center'>
-                <p className='text-xl font-semibold'>A room self contain</p>
-                <img src={heartIcon} alt='' className='size-5' />
-              </div>
-              {/* price + rating */}
-              <div className='flex justify-between items-center'>
-                <p className='text-sm text-brandDeepGray100 font-semibold'>
-                  ₦800,000
-                </p>
-                <p className='text-xs flex items-center py-1 gap-1'>
-                  (5.0) <img src={starIcon} alt='' className='size-3' />
-                </p>
-              </div>
-              {/* divider */}
-              <hr className='border border-brandNeutral100' />
-              {/* buttons */}
-              <div className='flex justify-between items-center'>
-                <Button
-                  variant='textBtn'
-                  size='small'
-                  text='View more'
-                  url='#'
-                  className='!px-0'
-                />
-                <Button
-                  size='small'
-                  text='Contact Us'
-                  url='#'
-                />
-              </div>
-            </div>
-          </div>
+        <div className='w-full py-14 flex max-tablet:flex-col-reverse flex-wrap tablet:grid tablet:grid-cols-2 laptop:grid-cols-3 xllaptop:grid-cols-4 justify-center items-center gap-5 '>
+          <ProductCard
+            productImg={houseImg}
+            newProduct
+            name='A room self contain'
+            price='₦800,000'
+            url='#'
+          />
 
-          <div className='relative border border-brandDeepGray4 rounded-xl overflow-hidden'>
-            <img src={houseImg} alt='' className='h-[200px] w-[265px]' />
-            <span className='bg-white py-[6px] px-3 rounded-3xl text-xs text-brandGreen3 font-medium absolute top-8 left-4'>
-              New
-            </span>
-          </div>
+          <ProductCard
+            productImg={houseImg}
+            newProduct
+            name='A room self contain'
+            price='₦800,000'
+            url='#'
+          />
 
-          <div className='relative border border-brandDeepGray4 rounded-xl overflow-hidden'>
-            <img src={houseImg} alt='' className='h-[200px] w-[265px]' />
-            <span className='bg-white py-[6px] px-3 rounded-3xl text-xs text-brandGreen3 font-medium absolute top-8 left-4'>
-              New
-            </span>
-          </div>
+          <ProductCard
+            productImg={houseImg}
+            newProduct
+            name='A room self contain'
+            price='₦800,000'
+            url='#'
+          />
 
           <p className='font-medium w-[265px]'>
             <span className='font-semibold'>FACT:</span> New apartments cost
@@ -89,6 +57,7 @@ const WeveCustomized = () => {
           </p>
         </div>
 
+        {/* This is where I stopped. To continue with 'All Apartments section */}
         <div className='py-12'>
           <div>
             <h2 className='max-w-[20ch] font-medium'>All apartments</h2>
