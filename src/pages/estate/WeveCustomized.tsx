@@ -51,7 +51,7 @@ const WeveCustomized = () => {
             url='#'
           />
 
-          <p className='font-medium w-[265px]'>
+          <p className='laptop:max-xllaptop:hidden font-medium w-[265px]'>
             <span className='font-semibold'>FACT:</span> New apartments cost
             more
           </p>
