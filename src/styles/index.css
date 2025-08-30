@@ -58,7 +58,7 @@
 
   p {
     @apply text-base;
-    @apply tablet:text-lg;
+    @apply xltablet:text-lg;
     @apply desktop:text-xl;
   }
 }
