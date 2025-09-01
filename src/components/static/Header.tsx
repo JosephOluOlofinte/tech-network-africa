@@ -50,6 +50,13 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink
+                    to='/e-commerce'
+                    className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
+                    E-commerce
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
                     to='/marketplace'
                     className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
                     Marketplace

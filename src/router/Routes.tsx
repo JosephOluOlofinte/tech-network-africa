@@ -19,6 +19,7 @@ export const routes = createBrowserRouter([
       { path: '/our-estate', element: <EstateComp /> },
       { path: '/marketplace', element: <EcomComp /> },
       { path: '/product', element: <ProductComp /> },
+      { path: '/e-commerce', element: <EcomComp /> },
     ],
   },
 
