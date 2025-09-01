@@ -26,7 +26,7 @@ const WeveCustomized = () => {
           </div>
         </div>
 
-        <div className='w-full py-14 flex max-tablet:flex-col-reverse flex-wrap tablet:grid tablet:grid-cols-2 laptop:grid-cols-3 xllaptop:grid-cols-4 justify-center items-center gap-5 '>
+        <div className='w-full py-14 flex max-tablet:flex-col-reverse flex-wrap tablet:grid tablet:grid-cols-[50%_50%] laptop:grid-cols-3 xllaptop:grid-cols-4 justify-center items-center gap-7'>
           <ProductCard
             productImg={houseImg}
             newProduct
@@ -59,7 +59,7 @@ const WeveCustomized = () => {
 
         {/* This is where I stopped. To continue with 'All Apartments section */}
         <div className='py-12'>
-          <div>
+          <div className='flex justify-between items-center'>
             <h2 className='max-w-[20ch] font-medium'>All apartments</h2>
             <NavLink to='#'>See all</NavLink>
           </div>

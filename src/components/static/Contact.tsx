@@ -55,7 +55,7 @@ const Contact = () => {
   };
 
   return (
-    <section className='min-h-[calc(100vh-100px)] pt-12 flex justify-center'>
+    <section className='h-[calc(100vh-100px)] max-h-[920px] pt-12 flex justify-center'>
       <div className='inner-container max-laptop:max-w-[500px] grid laptop:grid-cols-[60%,_1fr] grid-rows-[min-content]'>
         <div className='hidden laptop:block'>
           <img

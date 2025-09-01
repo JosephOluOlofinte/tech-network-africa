@@ -19,7 +19,7 @@ const ProductCard: React.FC<Props> = ({
   url,
 }) => {
   return (
-    <div className='relative border border-brandDeepGray4 rounded-xl overflow-hidden max-xltablet:w-full'>
+    <div className='relative border border-brandDeepGray4 rounded-xl overflow-hidden max-tablet:max-w-[500px]'>
       <img src={productImg} alt='' className='h-auto w-full' />
       {newProduct ? (
         <span className='bg-white py-[6px] px-3 rounded-3xl text-xs text-brandGreen3 font-medium absolute top-8 left-4'>
