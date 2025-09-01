@@ -61,6 +61,12 @@
     @apply xltablet:text-lg;
     @apply desktop:text-xl;
   }
+
+  small {
+    @apply text-sm;
+    @apply xltablet:text-base;
+    @apply desktop:text-lg;
+  }
 }
 
 

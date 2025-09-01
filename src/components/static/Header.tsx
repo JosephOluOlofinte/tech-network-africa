@@ -25,40 +25,40 @@ const Header = () => {
               <img src={logo} alt='TNA logo' className='h-full' />
             </div>
 
-            <nav className='hidden xltablet:block'>
-              <ul className='h-full flex items-center gap-4 xllaptop:gap-[22px]'>
+            <nav className='hidden laptop:block'>
+              <ul className='h-full flex items-center gap-4'>
                 <li>
                   <NavLink
                     to='/'
-                    className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3 xllaptop:px-2 font-medium'>
                     Home
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='/about'
-                    className='py-3  laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3  xllaptop:px-2 font-medium'>
                     About us
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='/our-estate'
-                    className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3 xllaptop:px-2 font-medium'>
                     Our Estate
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='/e-commerce'
-                    className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3 xllaptop:px-2 font-medium'>
                     E-commerce
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     to='/marketplace'
-                    className='py-3 laptop:px-4 xllaptop:px-[22px] xllaptop:text-lg font-medium'>
+                    className='py-3 laptop:px-4 xllaptop:px-2 font-medium'>
                     Marketplace
                   </NavLink>
                 </li>
