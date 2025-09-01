@@ -63,6 +63,39 @@ const WeveCustomized = () => {
             <h2 className='max-w-[20ch] font-medium'>All apartments</h2>
             <NavLink to='#'>See all</NavLink>
           </div>
+          <div className='w-full py-14 flex max-tablet:flex-col-reverse flex-wrap tablet:grid tablet:grid-cols-[50%_50%] laptop:grid-cols-3 xllaptop:grid-cols-4 justify-center items-center gap-7'>
+            <ProductCard
+              productImg={houseImg}
+              newProduct
+              name='A room self contain'
+              price='₦800,000'
+              url='#'
+            />
+
+            <ProductCard
+              productImg={houseImg}
+              newProduct
+              name='A room self contain'
+              price='₦800,000'
+              url='#'
+            />
+
+            <ProductCard
+              productImg={houseImg}
+              newProduct
+              name='A room self contain'
+              price='₦800,000'
+              url='#'
+            />
+
+            <ProductCard
+              productImg={houseImg}
+              newProduct
+              name='A room self contain'
+              price='₦800,000'
+              url='#'
+            />
+          </div>
         </div>
       </div>
     </section>
