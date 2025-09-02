@@ -18,7 +18,6 @@ const WeveSimplified = () => {
         </header>
 
         {/* SCAM IS IMPOSSIBLE ON THE PLATFORM */}
-
         <div className='grid max-w-[550px] xltablet:min-w-full xltablet:grid-cols-2 min-[870px]:grid-cols-[1fr,_40%] gap-10 justify-center xltablet:justify-between items-center my-0 mx-auto place-items-center'>
           <div className='h-fit grid gap-8'>
             <div className='h-fit grid gap-1'>
