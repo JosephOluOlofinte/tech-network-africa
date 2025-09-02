@@ -9,18 +9,16 @@ const AnEstateMajorly = () => {
     <Fragment>
       <section className='bg-brandWhite h-fit pb-16 tablet:pb-20 laptop:pb-24 flex justify-center'>
         <div className='inner-container grid gap-10 tablet:gap-13 laptop:gap-16'>
-          <div className='grid gap-[15px] justify-center text-center'>
-            <header>
+            <header className='grid gap-[15px] justify-center text-center'>
               <h2 className='font-bold text-[#0B0D12]'>
                 An estate majorly for the tech industry
               </h2>
+              <p className='text-brandDeepGray2 max-w-[60ch] text-center justify-self-center'>
+                Here, you'll find more than just a place to live or work –
+                you'll discover a vibrant community of like-minded individuals
+                passionate about technology and its limitless possibilities.
+              </p>
             </header>
-            <p className='text-brandDeepGray2 max-w-[60ch] text-center'>
-              Here, you'll find more than just a place to live or work – you'll
-              discover a vibrant community of like-minded individuals passionate
-              about technology and its limitless possibilities.
-            </p>
-          </div>
 
           <div className='flex flex-col-reverse gap-8 xltablet:grid xltablet:grid-cols-2'>
             <div className='w-full max-w-[510px] grid grid-rows-2 gap-[70px]'>

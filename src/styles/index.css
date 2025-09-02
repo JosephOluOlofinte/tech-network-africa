@@ -16,50 +16,61 @@
   }
 
   /* Typography */
-  h1 {
-    @apply text-[clamp(1.875rem,_5vw,_4rem)];
+  h1, h2, h3 {
     @apply leading-tight;
+    @apply text-brandDeepGray100;
+  }
+
+  h4, h5, h6 {
+    @apply leading-snug;
+    @apply text-brandDeepGray100;
+  }
+
+  h1 {
+    @apply text-[clamp(1.875rem,_4vw,_3.5rem)];
   }
 
   h2 {
-    @apply text-[clamp(1.5rem,_4vw,_3.2rem)];
-    @apply leading-tight;
+    @apply text-[clamp(1.5rem,_3vw,_2.7rem)];
   }
 
   h3 {
-    @apply text-[clamp(1.25rem,_3vw,_2.4rem)];
-    @apply leading-tight;
+    @apply text-[clamp(1.25rem,_2vw,_2rem)];
   }
 
   h4 {
-    @apply text-[clamp(1.125rem,_2.5vw,_2rem)];
-    @apply leading-snug;
+    @apply text-[clamp(1.125rem,_1.8vw,_1.7rem)];
   }
 
   h5 {
-    @apply text-[clamp(1rem,_2vw,_1.6rem)];
-    @apply leading-snug;
+    @apply text-[clamp(1rem,_1.5vw,_1.3rem)];
     @apply font-semibold;
   }
 
   h6 {
-    @apply text-[clamp(1rem,_2vw,_1.2rem)];
-    @apply leading-snug;
+    @apply text-[clamp(1rem,_1.5vw,_1.2rem)];
     @apply font-semibold;
   }
 
   p, li, button, div, span, article, section {
-    @apply text-[clamp(1rem,_2vw,_1.2rem)];
+    @apply text-[clamp(1rem,_1.5vw,_1.125rem)];
     @apply leading-snug;
+    @apply text-[#4b4b4b];
   }
 
   small {
     @apply text-[clamp(0.875rem,_1.75vw,_1rem)];
     @apply leading-snug;
+    @apply text-[#4b4b4b];
   }
 }
 
 @layer utilities {
+
+  .section-py {
+    @apply py-[clamp(2.5rem,_4vw,_4.5rem)]
+  }
+  
   .bg-home-hero {
     background-image: url('../assets/images/estate-hero-bg.png');
     background-size: cover;
