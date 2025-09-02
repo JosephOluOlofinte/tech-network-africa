@@ -17,58 +17,47 @@
 
   /* Typography */
   h1 {
-    @apply text-3xl;
-    @apply tablet:text-4xl;
-    @apply desktop:text-5xl;
+    @apply text-[clamp(1.875rem,_5vw,_4rem)];
+    @apply leading-tight;
   }
 
   h2 {
-    @apply text-2xl;
-    @apply tablet:text-3xl;
-    @apply desktop:text-4xl;
+    @apply text-[clamp(1.5rem,_4vw,_3.2rem)];
+    @apply leading-tight;
   }
 
   h3 {
-    @apply text-xl;
-    @apply tablet:text-2xl;
-    @apply desktop:text-3xl;
+    @apply text-[clamp(1.25rem,_3vw,_2.4rem)];
+    @apply leading-tight;
   }
 
   h4 {
-    @apply text-lg;
-    @apply tablet:text-xl;
-    @apply desktop:text-2xl;
-    @apply font-semibold;
+    @apply text-[clamp(1.125rem,_2.5vw,_2rem)];
+    @apply leading-snug;
   }
 
   h5 {
-    @apply text-base;
-    @apply tablet:text-lg;
-    @apply desktop:text-xl;
+    @apply text-[clamp(1rem,_2vw,_1.6rem)];
+    @apply leading-snug;
     @apply font-semibold;
-
   }
 
   h6 {
-    @apply text-base;
-    @apply tablet:text-lg;
-    @apply desktop:text-xl;
+    @apply text-[clamp(1rem,_2vw,_1.2rem)];
+    @apply leading-snug;
     @apply font-semibold;
   }
 
-  p {
-    @apply text-base;
-    @apply xltablet:text-lg;
-    @apply desktop:text-xl;
+  p, li, button, div, span, article, section {
+    @apply text-[clamp(1rem,_2vw,_1.2rem)];
+    @apply leading-snug;
   }
 
   small {
-    @apply text-sm;
-    @apply xltablet:text-base;
-    @apply desktop:text-lg;
+    @apply text-[clamp(0.875rem,_1.75vw,_1rem)];
+    @apply leading-snug;
   }
 }
-
 
 @layer utilities {
   .bg-home-hero {
