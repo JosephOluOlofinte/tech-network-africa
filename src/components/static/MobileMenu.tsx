@@ -36,6 +36,13 @@ const MobileMenu: React.FC<Props> = ({ onClick }) => {
           </li>
           <li>
             <NavLink
+              to='/e-commerce'
+              className='py-3 px-[22px] text-lg font-medium'>
+              E-commerce
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to='/marketplace'
               className='py-3 px-[22px] text-lg font-medium'>
               Marketplace

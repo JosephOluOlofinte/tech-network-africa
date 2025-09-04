@@ -64,7 +64,7 @@
     @apply text-[#4b4b4b];
   }
 
-  footer h2, footer h3, ul li {
+  footer h2, footer h3, footer ul li {
     @apply text-brandWhite;
   }
 }
