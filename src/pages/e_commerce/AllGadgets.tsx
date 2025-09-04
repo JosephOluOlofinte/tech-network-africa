@@ -8,7 +8,7 @@ const AllGadgets = () => {
   return (
     <section className='section-py flex justify-center relative'>
       <div className='inner-container'>
-        <div className='w-full flex flex-col items-center xltablet:flex-row max-xltablet:gap-10 gap-5'>
+        <div className='w-full flex flex-col-reverse items-center xltablet:flex-row max-xltablet:gap-10 gap-5'>
           <div className='w-[550px] xlmobile:w-[700px] tablet:w-[80%] xltablet:w-4/6'>
             <img
               src={thoughtfulGuy}
