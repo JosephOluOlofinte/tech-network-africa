@@ -9,8 +9,8 @@ import { Button } from '../block';
 
 const FAQ = () => {
   return (
-    <section className='bg-white h-fit py-[60px] flex justify-center'>
-      <div className='inner-container grid gap-[70px] place-items-center'>
+    <section className='bg-white h-fit section-py flex justify-center'>
+      <div className='inner-container grid gap-[30px] place-items-center'>
         <div className='grid gap-[15px] justify-center text-center'>
           <header>
             <h2 className='font-bold text-[#0B0D12]'>

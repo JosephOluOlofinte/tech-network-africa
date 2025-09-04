@@ -55,7 +55,7 @@ const Contact = () => {
   };
 
   return (
-    <section className='h-fit pt-12 flex justify-center'>
+    <section className='h-fit flex justify-center'>
       <div className='inner-container max-laptop:max-w-[500px] grid laptop:grid-cols-[60%,_1fr] grid-rows-[min-content]'>
         <div className='hidden laptop:block'>
           <img
@@ -71,9 +71,9 @@ const Contact = () => {
 
             <div className='grid gap-[12px] justify-center tablet:max-laptop:text-center'>
               <header>
-                <h2 className='font-bold text-[#0B0D12] text-center'>
+                <h3 className='font-bold text-[#0B0D12] text-center'>
                   Contact us to know more
-                </h2>
+                </h3>
               </header>
               <p className='text-brandDeepGray500 max-w-[35ch] text-center'>
                 Kindly share the following details for us to get in touch with

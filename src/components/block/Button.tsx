@@ -77,7 +77,7 @@ const Button: React.FC<ButtonProps> = ({
           className={styles}
           disabled={isLoading}
           {...rest}>
-          <span className='h-full flex items-center gap-2'>
+          <span className='h-full flex text-inherit items-center gap-2'>
             {icon ? <PlusIcon /> : null}{' '}
             {isLoading ? 'Loading...' : children || text}
           </span>
