@@ -67,7 +67,7 @@ export const AccordionChild: React.FC<AccordionChildProps> = ({
       <button
         onClick={onToggle}
         className='w-[100%] text-left cursor-pointer outline-0 flex justify-between items-center'>
-        <h3 className='text-[18px] font-inter font-medium max-w-[80%] leading-[1.4]'>
+        <h3 className='text-[18px] text-brandDeepGray900 font-inter font-medium max-w-[80%] leading-[1.4]'>
           {title}
         </h3>
         {isOpen ? (

@@ -74,12 +74,12 @@ const Footer = () => {
               text='Instant message'
               variant='greyBtn'
               size='large'
-              className='bg-transparent border-brandWhite text-base hover:bg-transparent'
+              className='bg-transparent border-brandWhite text-base text-brandWhite hover:bg-transparent'
             />
           </div>
         </div>
 
-        {/* mobile menu for smaller devices */}
+        {/* footer menu for smaller devices */}
         <div className='min-h-[105px] py-7 px-8 bg-white rounded-[10px] grid gap-6 items-center place-items-center xltablet:hidden'>
           <div className='flex items-center gap-[clamp(10px,3vw,40px)]'>
             <div className='h-[50px]'>
@@ -97,7 +97,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* mobile menu for larger devices */}
+        {/* footer menu for larger devices */}
         <div className='hidden h-[105px] py-7 px-8 bg-white rounded-[10px] xltablet:flex justify-between items-center'>
           <div className='grid grid-cols-[auto_auto_auto_auto] gap-6'>
             <img src={fb} alt='' className='size-6' />

@@ -63,6 +63,10 @@
     @apply leading-snug;
     @apply text-[#4b4b4b];
   }
+
+  footer h2, footer h3, ul li {
+    @apply text-brandWhite;
+  }
 }
 
 @layer utilities {

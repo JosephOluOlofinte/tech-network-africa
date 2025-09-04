@@ -2,7 +2,7 @@
 
 import monitorIcon from '../../assets/img_icons/monitor-icon.png';
 import checkIcon from '../../assets/img_icons/check-icon.png';
-import thoughtfulGuy from '../../assets/images/thoughtful-guy-2.png'
+import thoughtfulGuy from '../../assets/images/thoughtful-guy.png'
 
 const AllGadgets = () => {
   return (
