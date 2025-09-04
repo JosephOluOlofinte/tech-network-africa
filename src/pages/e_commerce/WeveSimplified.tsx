@@ -6,7 +6,7 @@ import checkIcon from '../../assets/img_icons/check-icon.png';
 
 const WeveSimplified = () => {
   return (
-    <section className='bg-white flex justify-center py-[clamp(2.5rem,_4vw,_4.5rem)]'>
+    <section className='bg-white flex justify-center pb-[clamp(2.5rem,_4vw,_4.5rem)]'>
       <div className='inner-container h-fit grid gap-6'>
         <header className='section-py grid justify-center gap-3'>
           <p className='justify-self-center'>
